@@ -1,0 +1,8 @@
+.odd {
+	color: green;
+	font-weight: bold;
+}
+.even {
+	color: red;
+	font-style: italic;
+}
