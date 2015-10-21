@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="course_2.css">
 </head>
+
 <body>
 
   <!-- Homework-->
