@@ -1,0 +1,36 @@
+img { 
+ 	  height: 200px ; 
+ 	  width: 200px;
+  }
+ 
+h3 {
+ 	 padding-left: 25px;
+  }
+
+h2 {
+ 	 color: #647064;
+  }
+
+h1 {}
+
+
+#title {
+	     background-color: white;
+	     max-width: 320px;
+	     border: solid 2px;
+      }
+
+#potato {  
+ 	      border: solid 2px;
+          margin-bottom: 20px;
+          margin-top: 20px ;
+          background-color: white;
+	      max-width: 320px;
+	  }
+
+#myaccount {
+ 	         border: solid 2px;
+ 	         background-color: white;
+	         max-width: 640px;
+         }
+
