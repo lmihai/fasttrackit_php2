@@ -1,6 +1,8 @@
-p.number.even{
+p.even{
 	color: red;
+
 }
 p.odd{
 	color: green;
+	font-weight: bold;
 }
