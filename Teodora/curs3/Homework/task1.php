@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Homework curs3 PHP task1</title>
+	<title>Homework curs3 PHP</title>
 </head>
 <body>
 	<p>
