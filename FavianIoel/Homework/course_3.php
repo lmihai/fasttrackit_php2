@@ -18,40 +18,43 @@ $age_vlad = 19;
 
 // a)
 if ($age_maria > $age_ana ) {
-	print("Maria");
+	print("Maria .");
 }
 	elseif ($age_maria < $age_ana) {
-		print("Ana") ;
+		print("Ana .") ;
 	}
 
 echo "<p></p>";
 
 // b)
 	if ($age_alex > $age_ionescu) {
-		print("Alex");
+		print("Alex .");
 	}
 	elseif ($age_alex < $age_ionescu) {
-		print("Ionescu") ;
+		print("Ionescu .") ;
 	}
 
 echo "<p></p>";
 
 // c)
 	if ($age_ionescu > $age_ana) {
-		print("Ionescu");
+		print("Ionescu .");
 	}
 	elseif ($age_ionescu < $age_ana) {
-		print("Ana");
+		print("Ana .");
+	}
+	elseif ($age_ionescu == $age_ana) {
+		print("Bouth Ionescu and Maria  are 25 .") ;
 	}
 
 echo "<p></p>";
 
 // d)
 	if ($age_george > $age_vlad) {
-		print("George");
+		print("George .");
 	}
 	elseif ($age_george < $age_vlad) {
-		print("Vlad") ;
+		print("Vlad .") ;
 	}
 
 ?>
