@@ -58,3 +58,91 @@ echo "<p></p>";
 	}
 
 ?>
+<?php
+echo "</br>";
+echo "</hr>";
+echo "</br>";
+	/*-------------------------------TASK 2-----------------------------
+	Print the results for the following expressions:
+	a) not($a)and $b          d) $a === $c             g) $a == $c
+	b) $a or $b               e) $a and $c or$d        h) not($b) === $c
+	c) not($a or $b)          f) not($c) == $b         i) $a or not ($b) */
+   
+ // Given  Variables :
+
+    $a = true;
+    $b = false;
+    $c = 1;
+    $d = 0;  
+ //aded values :
+    $x1 = !($a) && $b;
+    $x2 = $a || $b;
+    $x3 = !($a || $b);
+    $x4 = $a === $c;
+    $x5 = $a && ($c || $d);
+    $x6 = !($c) == $b;
+    $x7 = $a == $c;
+    $x8 = !($b) === $c;
+    $x9 = $a || !($b);
+
+            
+            //a)   
+                echo "<br />";
+                if ($x1 == false) {
+                    print ("false");
+                }
+
+            //b)     
+                echo "<br />";
+                if ($a || $b) {
+                    print ("true");
+                }
+            
+            //c)    
+                echo "<br />";
+                if ($x3 == false) {
+                    print ("false");
+                }
+            
+             //d)   
+                echo "<br />";
+                if ($x4 == false){
+                    print ("false");  
+                }
+          
+             //e)
+                echo "<br />";
+                if($x5 == true) {
+                    print ("true");
+                }
+                else {
+                    print (" false ");
+                }
+
+             //f)
+                echo "<br />";    
+                if ($x6 == true){
+                   echo " true";
+                   }
+                else {
+                   echo "false";
+                }
+                
+            //g)
+                echo "<br />";
+                if ($x7 == true) {
+                    echo "true";
+                   }
+
+            //h)
+                echo "<br />";
+                if ($x8 == false) {
+                    echo "false";
+                   } 
+            //i)
+                echo "<br />";
+                if ($x9 == true) {
+                      echo "true";
+                   }
+
+?>
