@@ -43,13 +43,9 @@
 				}
 
 			print "<br />";
-			$f = $a && ($c || $d);// true si 1 sau 0, 
-			/*
-			daca: 	$f1 = $a && $c => true && true(1 convertit da true)  => true
-					$f2 = $a && $d => true && false(0 convertit da false) => false
-					$f = $f1 || $f2 => true || false => true
-			*/		
+			$f = $a && $c || $d;// ATENTIE && ARE PRIORITATE FATA DE ||
 				//print var_dump($f);// result true
+				// expresia se interpreteaza: ($a && $c)|| $d true or false intoarce true
 				print "<br />";
 				if($f == true) {
 					print "Expression is true!";
