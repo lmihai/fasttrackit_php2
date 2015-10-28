@@ -147,13 +147,14 @@ echo "</br>";
 
 ?>
 <?php
+//----------------------------TASK 3------------------------------
 echo "</h1>";
 /*given the following
   variables */
 $x = 5;
 $y = 6;
 
-//---------------------------task 3-------------------------------
+
 /* Solve and explain the results for :
 a) !(x > 6)                  c) (x==6 || x==5)
 b) (x==6 && x==5)            d) (x>-1 && y<10) */
@@ -188,4 +189,29 @@ echo "<p></p>";
 if ($x>-1 && $y<10) {
     echo "d) true";
 }
+?>
+<?php
+//------------------------------TASK 4--a)----------------------------------------
+echo "<h1></h1>";
+//Given the following variables , defined in Exactly the order below:
+$a = 3 ;
+$c = 21 ;
+$e = 1 ;
+
+/*write a script that , by comparing the 3 variables one to each other will
+  print them in ASCENDIG order . (with conditional sttements (IF || SWITCH) .*/
+
+if ($a>$c && $c>$e) {
+    print($e.','.$c.','.$a);
+}
+elseif ($e>$c && $c>$a) {
+    print($a.','.$c.','.$e);
+}
+elseif ($c>$a && $a>$e) {
+    print($e.','.$a.','.$c);
+}
+else{
+    echo "There's a problem , try harder ! .";
+}
+
 ?>
