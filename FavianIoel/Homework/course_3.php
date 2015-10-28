@@ -146,3 +146,46 @@ echo "</br>";
                    }
 
 ?>
+<?php
+echo "</h1>";
+/*given the following
+  variables */
+$x = 5;
+$y = 6;
+
+//---------------------------task 3-------------------------------
+/* Solve and explain the results for :
+a) !(x > 6)                  c) (x==6 || x==5)
+b) (x==6 && x==5)            d) (x>-1 && y<10) */
+
+
+// a)
+if ($x > 6) {
+   echo "a) x > 6";
+}
+else{
+    echo "a) !(x > 6 ) --> becouse x = 5 .";
+}
+
+echo "<p></p>";
+
+// b)
+if ($x==6 && $x==5) {
+    echo " b) true";
+}
+else {
+    echo "b) false - becouse x   <6 ";
+}
+echo "<p></p>";
+
+// c)
+if ($x==6 || $x==5) {
+    echo "c ) true => x=5 ";
+}
+echo "<p></p>";
+
+// d)
+if ($x>-1 && $y<10) {
+    echo "d) true";
+}
+?>
