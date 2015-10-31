@@ -20,9 +20,9 @@
 	else
 		print("<p>Vlad</p>");
 // Part 4
-	$a = 21;
-	$b = 1;
-	$e = 3;
+	$a = 3;
+	$b = 21;
+	$e = 1;
 	if($a>$b&&$b>$e){
 		print("<p> $a $b $e </p>");
 	}
