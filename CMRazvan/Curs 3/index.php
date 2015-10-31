@@ -100,6 +100,8 @@ $numbers[] = 2;
 $numbers[] = array(3,1);
 
 var_dump($numbers);
+echo '<br>';
+echo '<br>';
 
 // Array
 // (
@@ -113,4 +115,32 @@ var_dump($numbers);
 // )
 
 
+?>
+
+
+ 
+
+<?php
+$team = array();
+$team['PM'] = 'John';
+$team['Developer'] = 'Jack';
+$team['Tester'] = 'Jake';
+
+foreach ($team as $role => $name) {
+	echo $role;
+	echo ': ';
+	echo $name;
+	echo '<br>';
+
+}
+
+?>
+
+<?php
+$a= 2;
+$b= ++$a;// e diferenta intre ++$a si $a++ se face calcul inainte
+echo '<br>';
+echo $b;
+echo '<br>';
+print $b;
 ?>
