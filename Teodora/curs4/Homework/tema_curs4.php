@@ -19,6 +19,10 @@
 		);
 	var_dump($friends);
 
+	//2. Elvis selects a 7th number, add it to his ticket
+	$friends["tickets"]["elvis_ticket"][6] = 12;
+	var_dump($friends["tickets"]["elvis_ticket"]);//verificam daca array-ul contine si numarul 12 
+	
 	?>
 
 </body>
