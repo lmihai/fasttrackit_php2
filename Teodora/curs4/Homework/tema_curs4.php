@@ -17,12 +17,17 @@
 			"elvis_ticket" => array(19,39,25,22,7,40)
 			)
 		);
-	var_dump($friends);
+	//var_dump($friends);
 
 	//2. Elvis selects a 7th number, add it to his ticket
 	$friends["tickets"]["elvis_ticket"][6] = 12;
-	var_dump($friends["tickets"]["elvis_ticket"]);//verificam daca array-ul contine si numarul 12 
+	//var_dump($friends["tickets"]["elvis_ticket"]);//verificam daca array-ul contine si numarul 12 
 	
+	//Jane cancels her ticket, so remove her numbers array completely
+	unset($friends["tickets"]["jane_ticket"]);
+	var_dump($friends["tickets"]);//verificam array "tickets" si obs. ca nu mai apare "jane_ticket"
+	
+
 	?>
 
 </body>
