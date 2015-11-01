@@ -50,14 +50,16 @@ echo $sum;
 print('<p> Students in the PHP course ' . $students_in_the_other_courses . ' </p>');
 
 ?>
-
 <?php
+
 $a = 1.75;
 $b = 2.25;
 $c = 7.75;
 print($a + $b);// daca calculam direct nu scriem in ghilimele "" // 
+
 ?>
 <?php
+
 $total = $c / 12;
 print('<p>' . round ($total,3) . '</p>');// pentru 3 3 zecimale.
 
