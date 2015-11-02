@@ -40,7 +40,12 @@
 	//For each friend, display their first name and number of numbers they have on the ticket
 	
 	for ($i=0; $i < count($friends); $i++) { 
+		if(isset($friends[$i]["ticket"])){
 		echo "Name: " . $friends[$i]["first_name"] . " \\ " . count($friends[$i]["ticket"]) . " numbers" . "<br>";
+		}
+		else {
+			echo "Name: " . $friends[$i]["first_name"] . " \\ " . "0 numbers" . "<br>";
+		}
 	}
 	
 		 
