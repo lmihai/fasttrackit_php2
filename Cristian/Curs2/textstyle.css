@@ -1,0 +1,9 @@
+p.even{
+	color: red;
+	font-style: italic;
+
+}
+p.odd{
+	color: green;
+	font-weight: bold;
+}

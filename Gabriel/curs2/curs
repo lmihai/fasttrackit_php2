@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>Fasttrackit</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
 		<h1> FasttrackSite</h1>
@@ -10,13 +11,13 @@
 			<img src="http://image.stirileprotv.ro/media/images/600x375/Dec2008/60210073.jpg" width="100" height="100"/>
 			
 		</div>
-		<div>
+		<div id="gray">
 			<h3> My Account </h3>
 			<p>Nechita Gabriel</p>
 			<p>gabriel_n2006@yahoo.com</p>
 			<p>0741234567</p>
 			<br/>
-			<p> <a href="#"> Edit account</a> <a href="#"> Administer some settings </a> <a href="#"> Revoke account </a></p>
+			<p> <a href="#"> Edit account</a> <a href="#"> Administer some settings</a> <a id="disable" href="#"> Revoke account </a></p>
 		</div>
 	</body>
 </html>

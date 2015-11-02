@@ -1,5 +1,6 @@
 <?php
-
+echo "<strong>---TASK 1---</strong>";
+echo "<p></p>";
 /*--------------------------TASK 1 ---------------------------------
 compare the following ages and print the name of the oldest person:
 a)maria vs Ana         c)Ionescu vs Ana
@@ -58,10 +59,19 @@ echo "<p></p>";
 	}
 
 ?>
+
+
+
+
+
+
+
+
+
 <?php
-echo "</br>";
-echo "</hr>";
-echo "</br>";
+echo "<h1></h1>";
+echo "<strong>---TASK 2---</strong>";
+echo "<p></p>";
 	/*-------------------------------TASK 2-----------------------------
 	Print the results for the following expressions:
 	a) not($a)and $b          d) $a === $c             g) $a == $c
@@ -145,4 +155,112 @@ echo "</br>";
                       echo "true";
                    }
 
+?>
+
+
+
+
+
+<?php
+//----------------------------TASK 3------------------------------
+echo "<h1></h1>";
+echo "<strong>---TASK 3---</strong>";
+echo "<h1></h1>";
+/*given the following
+  variables */
+$x = 5;
+$y = 6;
+
+
+/* Solve and explain the results for :
+a) !(x > 6)                  c) (x==6 || x==5)
+b) (x==6 && x==5)            d) (x>-1 && y<10) */
+
+
+// a)
+if ($x > 6) {
+   echo "a) x > 6";
+}
+else{
+    echo "a) !(x > 6 ) --> becouse x = 5 .";
+}
+
+echo "<p></p>";
+
+// b)
+if ($x==6 && $x==5) {
+    echo " b) true";
+}
+else {
+    echo "b) false - becouse x   <6 ";
+}
+echo "<p></p>";
+
+// c)
+if ($x==6 || $x==5) {
+    echo "c ) true => x=5 ";
+}
+echo "<p></p>";
+
+// d)
+if ($x>-1 && $y<10) {
+    echo "d) true";
+}
+?>
+
+
+
+
+
+<?php
+//------------------------------TASK 4--a)--switch--------------------------------------
+echo "<h1></h1>";
+echo "<strong>---TASK 4-a)---</strong>";
+echo "<p></p>";
+//Given the following variables , defined in Exactly the order below:
+$a = 3 ;
+$c = 21 ;
+$e = 1 ;
+
+/*write a script that , by comparing the 3 variables one to each other will
+  print them in ASCENDIG order . (with conditional sttements (IF || SWITCH) .*/
+
+if ($a>$c && $c>$e) {
+    print($e.','.$c.','.$a);
+}
+elseif ($e>$c && $c>$a) {
+    print($a.','.$c.','.$e);
+}
+elseif ($c>$a && $a>$e) {
+    print($e.','.$a.','.$c);
+}
+else{
+    echo "There's a problem , try harder ! .";
+}
+
+
+
+
+
+
+//-------------------------------------4-b)--switch---------------------------------------
+echo "<h1></h1>";
+echo "<strong>---4-b)---</strong>";
+echo "<p></p>";
+
+switch ($a) {
+    case ($a>$c && $c>$e):
+        print($e.','.$c.','.$a);
+    
+        break;
+    case ($e>$c && $c>$a):
+        print($a.','.$c.','.$e);
+    
+        break;
+    case ($c>$a && $a>$e):
+        print($e.','.$a.','.$c);
+    
+        break;
+
+}
 ?>
