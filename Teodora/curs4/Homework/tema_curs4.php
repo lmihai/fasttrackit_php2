@@ -9,25 +9,41 @@
 	//1. Define a nested array to hold their first name, last name and ticket with 6 numbers;
 
 	$friends = array(
-		"first_name" => array("John","Jane","Elvis"),
-		"last_name" => array("Doe","Foo","Peanutbutter"),
-		"tickets" => array(
-			"john_ticket" => array(2,15,1,43,24,47),
-			"jane_ticket" => array(30,10,9,2,25,18),
-			"elvis_ticket" => array(19,39,25,22,7,40)
-			)
+				array(
+					"first_name" => 'John',
+					"last_name" => 'Doe',
+					"ticket" => array(2,15,1,43,24,47)
+					),
+				array(
+					"first_name" => 'Jane',
+					"last_name" => 'Foo',
+					"ticket" => array(30,10,9,2,25,18)
+					),
+				array(
+					"first_name" => 'Elvis',
+					"last_name" => 'Peanutbutter',
+					"ticket" => array(19,38,25,22,7,40)
+					)		 
 		);
 	//var_dump($friends);
 
 	//2. Elvis selects a 7th number, add it to his ticket
-	$friends["tickets"]["elvis_ticket"][6] = 12;
-	//var_dump($friends["tickets"]["elvis_ticket"]);//verificam daca array-ul contine si numarul 12 
+	$friends[0]["ticket"][6] = 12;	
+	//var_dump($friends[0]["ticket"]);//verificam daca array-ul contine si numarul 12 pe care l-am introdus
 	
-	//Jane cancels her ticket, so remove her numbers array completely
-	unset($friends["tickets"]["jane_ticket"]);
-	var_dump($friends["tickets"]);//verificam array "tickets" si obs. ca nu mai apare "jane_ticket"
+	//3.Jane cancels her ticket, so remove her numbers array completely
 	
-
+	unset($friends[1]["ticket"]);
+	//var_dump($friends); verificam si observam ca s-a sters array-ul
+	
+	
+	//For each friend, display their first name and number of numbers they have on the ticket
+	
+	for ($i=0; $i < count($friends); $i++) { 
+		echo "Name: " . $friends[$i]["first_name"] . " \\ " . count($friends[$i]["ticket"]) . " numbers" . "<br>";
+	}
+	
+		 
 	?>
 
 </body>
