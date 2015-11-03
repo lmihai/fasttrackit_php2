@@ -84,7 +84,7 @@ echo "<strong><p>4) Find out the product of all numbers from -99 to 99.</p></str
 
 $start= -99 ;
 $end= 99;
-$product = 0;
+$product = 1;
 
 while ( $start <= $end) {
   $product *= $start ;
