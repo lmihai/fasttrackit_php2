@@ -35,13 +35,13 @@ echo $sum2;
 
 
 echo "<p></p>";
-$start3 = 1;
-$stop3 = 1000;
-$sum3 = 0;
+$start3 = -99;
+$stop3 = 99;
+$product = 1;
 for ($x=$start3; $x <$stop3 ; $x++) { 
-	$sum3 = $sum3 + $x;
+	$product = $product * $x;
 }
-echo $sum3;
+echo round($product);
 
 
 
