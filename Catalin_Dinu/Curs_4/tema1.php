@@ -4,5 +4,6 @@ $loto_players = array(
 					array("first_name" => "Jane", "last_name" => "Foo", "loto_ticket" => array(32, 6, 18, 21,13, 42)),
 					array("first_name" => "Elvis", "last_name" => "Peanutbutter", "loto_ticket" => array(21, 7, 17, 35, 5, 44))
 					);
+$loto_players[2]["loto_ticket"][6] = 13;
 print_r($loto_players);
 ?>
