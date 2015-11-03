@@ -14,4 +14,8 @@ $friends[1] = array('first_name'=>'John', 'last_name'=>'Doe', 'ticket' => array(
 $friends[2] = array('first_name'=>'Jane', 'last_name'=>'Foo','ticket' => array(31,13,12,14,45,43));
 $friends[3] = array('first_name'=>'Elvis', 'last_name'=>'Peanutbutter','ticket' => array(33,11,12,24,44,54));
 
+/* 2. Elvis selects a 7th number ,  add it to his 
+   ticket*/
+
+$friends[3]['ticket'][6] = 5 ;
 ?>
