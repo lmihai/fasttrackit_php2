@@ -18,4 +18,11 @@ $friends[3] = array('first_name'=>'Elvis', 'last_name'=>'Peanutbutter','ticket' 
    ticket*/
 
 $friends[3]['ticket'][6] = 5 ;
+
+/* 3. Jane cancels her ticket, so remove her
+ numbers array completly*/
+
+ unset($friends[3]['ticket']) ;
+
+ 
 ?>
