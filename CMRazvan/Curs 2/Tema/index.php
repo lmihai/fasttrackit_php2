@@ -103,34 +103,110 @@ $c = 1;
 $d = 0;
 //not($a) and $b
 print ("<p>" . !($a) && $b . "<p>");
+	echo '<br>';
 // $a or $b
 print ("<p>" . $a || $b . "<p>");
+	echo '<br>';
 //not($a or $b)
 print ("<p>" . !($a && $b) . "<p>");
+	echo '<br>';
 //$a === $c
 print ("<p>" . $a === $c . "<p>");
+	echo '<br>';
 //$a and $c or $d
 print ("<p>" . $a && $c || $d . "<p>");
+	echo '<br>';
 // not($c) == $b
 print ("<p>" . !($c) == $b . "<p>");
+	echo '<br>';
 // $a == $c
 print ("<p>" . $a == $c . "<p>");
+	echo '<br>';
 // not ($b) === $c
 print ("<p>" . !($b) === $c . "<p>");
+	echo '<br>';
 // $a or not ($b)
 print ("<p>" . $a || ! ($b) . "<p>");
+	echo '<br>';
 
 ?>
-
 
 
 
 <?php
 $x = 5;
 $y = 6;
+if (!($x>6)) {
+		echo '<br>';
+	print("X mai mare decat 6");
+		echo '<br>';
+}
+?>
+
+<?php
+$x = 5;
+$y = 6;
+
+if ($x==6 && $x==5) {
+		echo '<br>';
+	print("Da e bun");
+} else {
+		echo '<br>';
+	print("Ceva nu merge");
+}
+
+?>
+<?php
+$x = 5;
+$y = 6;
+
+if ($x==6 || $x==5) {
+		echo '<br>';
+	print("Da e bun");
+} else {
+		echo '<br>';
+	print("Ceva nu merge");
+}
+
+?>
+
+<?php
+$x = 5;
+$y = 6;
+
+if ($x>-1 && $y<10) {
+		echo '<br>';
+	print("Da e bun");
+} else {
+		echo '<br>';
+	print("Ceva nu merge");
+}
+
+?>
 
 
 
+<?php
+$a = 3;
+$c = 21;
+$e = 1;
 
+switch ($a) {
+    case ($a>$c && $c>$e):
+    		echo '<br>';
+        print($e.','.$c.','.$a);
+    
+        break;
+    case ($e>$c && $c>$a):
+    		echo '<br>';
+        print($a.','.$c.','.$e);
+    
+        break;
+    case ($c>$a && $a>$e):
+    		echo '<br>';
+        print($e.','.$a.','.$c);
+    
+        break;
 
+}
 ?>
