@@ -97,5 +97,20 @@ while ($start <= $stop) {
 	$start++;
 }
 echo $product;
+echo "<p></p>";
+
+$lista = array('gogosi', 'cipsuri', 'bomboane', 'miere', 'jeleuri', 'banane');
+for ($i=0; $i < count($lista) ; $i++) { 
+	echo $lista[$i];
+	echo "<br>";
+}
+
+
+
+
+
+
+
+
 
 ?>
