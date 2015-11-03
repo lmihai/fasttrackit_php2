@@ -28,7 +28,7 @@
 	//var_dump($friends);
 
 	//2. Elvis selects a 7th number, add it to his ticket
-	$friends[0]["ticket"][6] = 12;	
+	$friends[2]["ticket"][6] = 12;	
 	//var_dump($friends[0]["ticket"]);//verificam daca array-ul contine si numarul 12 pe care l-am introdus
 	
 	//3.Jane cancels her ticket, so remove her numbers array completely
@@ -37,16 +37,19 @@
 	//var_dump($friends); verificam si observam ca s-a sters array-ul
 	
 	
-	//For each friend, display their first name and number of numbers they have on the ticket
+	//4.For each friend, display their first name and number of numbers they have on the ticket
 	
 	for ($i=0; $i < count($friends); $i++) { 
-		if(isset($friends[$i]["ticket"])){
+		if(isset($friends[$i]["ticket"])){ 
 		echo "Name: " . $friends[$i]["first_name"] . " \\ " . count($friends[$i]["ticket"]) . " numbers" . "<br>";
 		}
 		else {
 			echo "Name: " . $friends[$i]["first_name"] . " \\ " . "0 numbers" . "<br>";
 		}
 	}
+
+	//4A. Calculate the sum of all numbers
+
 	
 		 
 	?>
