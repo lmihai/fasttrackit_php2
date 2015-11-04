@@ -48,10 +48,32 @@
 		}
 	}
 
-	//4A. Calculate the sum of all numbers
+	//4A. Calculate the sum of all numbers (for each friend) 
+	for ($i=0; $i < count($friends); $i++) { 
+		if(isset($friends[$i]["ticket"])){ 
+		echo "Sum of all numbers from  " . $friends[$i]["first_name"] . "'s ticket is " . array_sum($friends[$i]["ticket"]) . "<br>";
+		}
+		else {
+			echo "Sum of all numbers from  " . $friends[$i]["first_name"] . "'s ticket is " . "0" . "<br>";
+		}
+		
+	}
 
 	
-		 
+	//4B Calculate the sum of all numbers from all tickets
+	
+		$total_sum = 0;
+		for ($i = 0; $i <= count($friends); $i++)
+		{ 
+			if (isset($friends[$i]['ticket'])) 
+			{
+				$total_sum = $total_sum + array_sum($friends[$i]['ticket']);
+			}
+		}
+		echo "The total sum of all numbers from all tickets: " . $total_sum . "<br/>";
+
+			
+
 	?>
 
 </body>
