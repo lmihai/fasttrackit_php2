@@ -13,4 +13,11 @@ $loto_players = array(
 $loto_players[2]["loto_ticket"][6] = 13;
 $loto_players[1]["loto_ticket"] = array();
 //unset($loto_players[1]["loto_ticket"]);
+for ($i=0; $i < count($loto_players); $i++) {
+		echo $loto_players[$i]["first_name"];
+		echo ", number of numbers on the tickets: ";
+		echo count($loto_players[$i]["loto_ticket"]);
+		echo"<br>";
+}
+
 ?>
