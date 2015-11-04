@@ -92,6 +92,14 @@
 				print $i . "<br>";
 			}
 		}
+		//Write a program that orders ascendingly the following array
+		$array = array(2, 3, 1, 5, 4);		
+		sort($array);		
+
+		for ($i=0; $i < count($array); $i++) 
+		{ 
+			echo $array[$i] . " ";
+		}
 
 
 	?>
