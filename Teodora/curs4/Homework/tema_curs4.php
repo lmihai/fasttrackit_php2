@@ -72,7 +72,7 @@
 		}
 		echo "The total sum of all numbers from all tickets: " . $total_sum . "<br/>";
 
-			
+	//5.Display the biggest number from all tickets.	
 
 	?>
 
