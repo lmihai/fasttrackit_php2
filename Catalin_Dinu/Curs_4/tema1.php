@@ -19,5 +19,11 @@ for ($i=0; $i < count($loto_players); $i++) {
 		echo count($loto_players[$i]["loto_ticket"]);
 		echo"<br>";
 }
-
+$sum = 0;
+for ($i=0; $i < count($loto_players); $i++) {
+	foreach ($loto_players[$i]["loto_ticket"] as $sum_tickets) {
+		$sum = $sum + $sum_tickets;
+	}
+}
+echo "sum of all numbers is: " . $sum . "<br>";
 ?>
