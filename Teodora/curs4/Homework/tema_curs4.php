@@ -92,6 +92,8 @@
 				print $i . "<br>";
 			}
 		}
+
+
 		//Write a program that orders ascendingly the following array
 		$array = array(2, 3, 1, 5, 4);		
 		sort($array);		
@@ -101,8 +103,32 @@
 			echo $array[$i] . " ";
 		}
 
+		print "<br>";
 
-	?>
+	//Define two arrays with the same number of elements, just numbers.
+		$first_array = array(2, 16, 32, 54);
+		$second_array = array(3, 24, 36, 53);
+	//Create programmatically a third array, which holds on each position the sum 
+	//of the numbers from the same position in the first two arrays.
+	//For example, the first element in the third array is the sum of first element of first array
+	//and the first element of second array.
+		$third_array = array();
+		
+		for ($i=0; $i < count($first_array) ; $i++) { 
+			for ($x=0; $x < count($second_array) ; $x++) { 
+				if($x == $i) {
+					$sum = $first_array[$i] + $second_array[$x];
+					$third_array[] = $sum;
+				}				
+			}			
+		}
+
+		for ($i=0; $i < count($third_array) ; $i++) { 
+			print  $third_array[$i] . " " ;
+		} 
+		
+		?>
+		
 
 </body>
 </html>
