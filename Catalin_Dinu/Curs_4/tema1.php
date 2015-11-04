@@ -26,4 +26,12 @@ for ($i=0; $i < count($loto_players); $i++) {
 	}
 }
 echo "sum of all numbers is: " . $sum . "<br>";
+$result = 0;
+for ($i=0; $i < count($loto_players); $i++) {
+	foreach ($loto_players[$i]["loto_ticket"] as $maximum_tickets) {
+		if ($result < $maximum_tickets)
+			$result = $maximum_tickets;
+	}
+}
+echo "maximum numbers is: " . $result . "<br>";
 ?>
