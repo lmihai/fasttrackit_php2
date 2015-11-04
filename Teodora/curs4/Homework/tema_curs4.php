@@ -72,7 +72,27 @@
 		}
 		echo "The total sum of all numbers from all tickets: " . $total_sum . "<br/>";
 
-	//5.Display the biggest number from all tickets.	
+	//5.Display the biggest number from all tickets.
+
+	//6.Write a program that prints the numbers from 1 to 100. But for multiples of three 
+		//print "Fast" instead of the number and for the multiples of five print "Track". 
+		//For numbers which are multiles of both three and five print "FastTrak".
+
+		for ($i = 1; $i <= 100; $i++) {
+			if(($i % 3 == 0) && ($i % 5 == 0)){
+				print "FastTrak" . "<br>";
+			}
+			elseif ($i % 5 == 0) {
+				print "Track" . "<br>";
+			}
+			elseif ($i % 3 == 0) {
+				print "Fast" . "<br>";
+			}
+			else {
+				print $i . "<br>";
+			}
+		}
+
 
 	?>
 
