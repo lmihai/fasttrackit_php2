@@ -74,6 +74,27 @@
 
 	//5.Display the biggest number from all tickets.
 
+				
+		$biggest_number = 0;
+
+		for ($i=0; $i < count($friends); $i++)
+		{ 
+			if (isset($friends[$i]['ticket'])) 
+			{
+				for ($x=0; $x < count($friends[$i]['ticket']); $e++) 
+				{ 
+					if (isset($friends[$i]['ticket'][$x]) && $biggest_number < $friends[$i]['ticket'][$x]) 
+					{
+						$biggest_number = $friends[$i]['ticket'][$x];
+					}
+				}
+			}
+		}
+
+		print 'The biggest number from all tickets is: ' . $biggest_number . '<br>';
+		
+	
+
 	//6.Write a program that prints the numbers from 1 to 100. But for multiples of three 
 		//print "Fast" instead of the number and for the multiples of five print "Track". 
 		//For numbers which are multiles of both three and five print "FastTrak".
@@ -94,7 +115,7 @@
 		}
 
 
-		//Write a program that orders ascendingly the following array
+	//7.Write a program that orders ascendingly the following array
 		$array = array(2, 3, 1, 5, 4);		
 		sort($array);		
 
@@ -105,7 +126,7 @@
 
 		print "<br>";
 
-	//Define two arrays with the same number of elements, just numbers.
+	//8.Define two arrays with the same number of elements, just numbers.
 		$first_array = array(2, 16, 32, 54);
 		$second_array = array(3, 24, 36, 53);
 	//Create programmatically a third array, which holds on each position the sum 
