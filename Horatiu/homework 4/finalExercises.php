@@ -30,7 +30,19 @@ for ($i=0; $i < count($friends) ; $i++) {
 	 }
 	  
 }
-                                                        
+echo "<p></p>";
+//Calculate the sum of all numbers
+$sum = 0;
+for ($i=0; $i <= count($friends) ; $i++) { 
+	if (isset($friends[$i]['ticket'])) 
+	{
+		$sum = $sum + array_sum($friends[$i]['ticket']);
+	} 
+}
+	echo "Suma numerelor din array este ".$sum;
+
+
+
                                                     
 
 
