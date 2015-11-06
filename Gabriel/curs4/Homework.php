@@ -18,6 +18,25 @@ for ($i=0; $i < count($players) ; $i++) {
 	echo "<br>";
 }
 
+$sum = 0;
+for ($i = 0; $i < count($players); $i++) { 
+	for ($j=0; $j < count($players[$i]['tickets']); $j++) { 
+		$sum += $players[$i]['tickets'][$j];
+	}
+}
 
+echo $sum;
+echo "<br>";
+
+$max=0;
+for ($i = 0; $i < count($players); $i++) { 
+	for ($j=0; $j < count($players[$i]['tickets']); $j++) { 
+		if ($players[$i]['tickets'][$j] > $max) {
+			$max = $players[$i]['tickets'][$j];
+		}
+	}
+}
+echo $max;
+echo "<br>";
 print_r($players);
 ?>
