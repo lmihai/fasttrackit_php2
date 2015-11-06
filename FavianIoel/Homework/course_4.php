@@ -107,4 +107,17 @@ echo('<strong><p>Dispaly the biggest number from all tickets .</p></strong>');
   		echo "FastTrack"."<br>";
   }
   }
+
+  /* 7.Write a program that orders ascendingly the following array:
+      $array = array(2, 3, 1, 5, 4);  */
+        echo   ('<strong><p>Write a program that orders ascendingly the 
+        	   following array:'.'<br>'.'
+               $array = array(2, 3, 1, 5, 4); .</p></strong>');
+
+
+        $array = array(2, 3, 1, 5, 4 );
+        asort($array);
+        foreach ($array as  $value) {
+        	echo $value . ", ";
+        }
 ?>
