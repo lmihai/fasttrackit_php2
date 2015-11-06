@@ -26,7 +26,7 @@ $friends[3]['ticket'][6] = 5 ;
 
  /* 4.a) For each friend, display their first name and 
  the number of numbers they have on the ticket*/
-
+echo('<strong><p>Display their first name and number of numbers they have on their tickets .</p></strong>');
 foreach ( $friends as $friend ) {
     echo $friend['first_name'] . ' has ';
 
@@ -39,6 +39,7 @@ foreach ( $friends as $friend ) {
     echo ' tickets<br>';
 }
 /*4.b) Calculate the sum of all numbers (for each friend )*/
+echo('<strong><p>Calculate the sum of all  numbers (for each friend).</p></strong>');
 foreach ( $friends as $friend ) {
     echo "Sum of all numbers from  " . $friend['first_name'] . "'s ticket is " ;
 
@@ -50,4 +51,18 @@ foreach ( $friends as $friend ) {
     }
   
 }
+
+/* 4.c) Calculate the sum of all friends numbers . */
+echo('<strong><p>Calculate the sum of all friends numbers .</p></strong>');
+$start = 0;
+$sum = 0;
+
+		for ($start ; $start <= count($friends); $start++)
+		{ 
+			if (isset($friends[$start]['ticket'])) 
+			{
+				$sum += array_sum($friends[$start]['ticket']);
+			}
+		}
+		echo "The total sum of all numbers from all tickets: " . $sum . "<br/>";
 ?>
