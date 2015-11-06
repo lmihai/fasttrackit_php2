@@ -40,10 +40,24 @@ for ($i=0; $i <= count($friends) ; $i++) {
 	} 
 }
 	echo "Suma numerelor din array este ".$sum;
+echo "<p></p>";
+//Display the biggest number from all tickets
+$biggest_number = 0;
 
-
-
-                                                    
+for ($i=1; $i < count($friends); $i++) 
+{ 
+	if (isset($friends[$i]['ticket'])) 
+	{
+		for ($e=0; $e < count($friends[$i]['ticket']) ; $e++) 
+		{ 
+			if (isset($friends[$i]['ticket'][$e]) && $biggest_number <= $friends[$i]['ticket'][$e])
+		    {
+				$biggest_number = $friends[$i]['ticket'][$e];
+			}
+		}
+	}
+}
+          echo "The biggest number is: ".$biggest_number;                                          
 
 
 
