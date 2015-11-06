@@ -66,7 +66,7 @@ $sum = 0;
 		}
 		echo "The total sum of all numbers from all tickets: " . $sum . "<br/>";
 
-/*Display the biggest number from all tickets . */
+/*5. Display the biggest number from all tickets . */
 echo('<strong><p>Dispaly the biggest number from all tickets .</p></strong>');
 
 
@@ -80,6 +80,31 @@ echo('<strong><p>Dispaly the biggest number from all tickets .</p></strong>');
        	echo 'the biggest number is '.$john_max.'. <br>';
        }
  
-  
-  
+  /* 6. write a program that prints the numbers 
+  from 1 to 100 . But for multiples of three print
+  "Fast" instead of the number and for the 
+  multiples of five print "Track". For numbers
+  wich are multiples  of both three and five print
+  "FastTrack". */
+  echo('<strong><p>Write a program that prints the numbers 
+  from 1 to 100 . But for multiples of three print
+  "Fast" instead of the number and for the 
+  multiples of five print "Track". For numbers
+  wich are multiples  of both three and five print
+  "FastTrack".</p></strong>');
+  $start = 0 ;
+  $stop = 100 ;
+  $sum = 0;
+
+  for ($start; $start <= $stop ; $start++) { 
+  	if ($start %3 == 0) {
+  		echo "Fast"."<br>";
+  	}
+  	elseif ($start % 5 == 0 ) {
+  		echo "Track"."<br>";
+  	}
+  	elseif ($start % 3  == 0 && $start % 5 == 0) {
+  		echo "FastTrack"."<br>";
+  }
+  }
 ?>
