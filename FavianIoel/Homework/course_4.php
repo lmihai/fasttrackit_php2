@@ -22,7 +22,21 @@ $friends[3]['ticket'][6] = 5 ;
 /* 3. Jane cancels her ticket, so remove her
  numbers array completly*/
 
- unset($friends[3]['ticket']) ;
+ unset($friends[2]['ticket']) ;
 
- 
+ /* 4. For each friend, display their first name and 
+ the number of numbers they have on the ticket*/
+
+foreach ( $friends as $friend ) {
+    echo $friend['first_name'] . ' has ';
+
+    if ( isset( $friend['ticket'] ) ) {
+       echo count($friend['ticket']);
+    } 
+    else {
+     echo    '0';
+    }
+    echo ' tickets<br>';
+}
 ?>
+
