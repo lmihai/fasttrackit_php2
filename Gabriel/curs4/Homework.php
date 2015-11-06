@@ -18,6 +18,14 @@ for ($i=0; $i < count($players) ; $i++) {
 	echo "<br>";
 }
 
+$sum = 0;
+for ($i = 0; $i < count($players); $i++) { 
+	for ($j=0; $j < count($players[$i]['tickets']); $j++) { 
+		$sum += $players[$i]['tickets'][$j];
+	}
+}
+
+echo $sum;
 
 print_r($players);
 ?>
