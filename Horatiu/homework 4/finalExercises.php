@@ -9,23 +9,32 @@ $friends[2] = array('firstName' => 'Elvis','lastName' => 'Peanutbutter', 'ticket
 
 var_dump($friends);
 //Checking if the results are right
-
+echo "<p></p>";
 //adding a number to Elvis
 $friends[2]['ticket'][] = 19; 
 var_dump($friends[2]);
-
-
-
-
-
-
-
-
+//Checking if the ticket is there.
+echo "<p></p>";
 
 //Removing Jane's ticket
+unset($friends[1]['ticket']);
+print_r($friends);
 
-
+echo "<p></p>";
 //For each friend, display their first name and the number of numbers they have on the ticket
+for ($i=0; $i < count($friends) ; $i++) { 
+	if (isset($friends[$i]['firstName']) && isset($friends[$i]['ticket'])) {
+	 	echo "Numele lui este ".$friends[$i]['firstName']." si numarul este de ".count($friends[$i]['ticket'])."bilete <br>";
+	 } else {
+	 	echo "Numele lui este ".$friends[$i]['firstName']." si numarul lui este de 0 bilete <br>";
+	 }
+	  
+}
+                                                        
+                                                    
+
+
+
 
 
 
