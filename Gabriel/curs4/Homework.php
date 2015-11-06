@@ -11,5 +11,13 @@ for ($i = 0; $i < 6 ; $i++) {
 	unset($players[1]['tickets'][$i]);
 }
 
+for ($i=0; $i < count($players) ; $i++) { 
+	echo $players[$i]['first_name'];
+	echo " ";
+	echo count($players[$i]['tickets']);
+	echo "<br>";
+}
+
+
 print_r($players);
 ?>
