@@ -101,5 +101,25 @@
                    array(
                     "actor" => "Ellen Page",
                     "image" => "images/actors/incemption/page.jpg");
+    $actors[12] =  array(
+                    "actor" => "Jamie Foxx",
+                    "image" => "images/actors/django/jamiefoxx.jpg");
+                   array(
+                    "actor" => "Christoph Waltz",
+                    "image" => "images/actors/django/waltz.jpg");
+                   array(
+                    "actor" => "Leonardo DiCaprio",
+                    "image" => "images/actors/inception/leonardo.jpg");
+     $actors[13] =  array(
+                    "actor" => "Guy Pearce",
+                    "image" => "images/actors/memento/guypearce.jpg");
+                   array(
+                    "actor" => "Carrie-Anne Moss",
+                    "image" => "images/actors/memento/moss.jpg");
+                   array(
+                    "actor" => "Joe Pantoliano",
+                    "image" => "images/actors/memento/joe.jpg");               
+
+
 
 ?>

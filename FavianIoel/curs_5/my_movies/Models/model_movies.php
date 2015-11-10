@@ -46,5 +46,14 @@
                         'title' => 'Inception',
                         'year'  => 2010,
                         'poster'=> 'images/movies/inception.jpg');
+    $movies[12] = array(
+                        'title' => 'Django Unchained',
+                        'year'  => 2012,
+                        'poster'=>'images/movies/django.jpg');
+    $movies[13] = array(
+                        'title' => 'Memento',
+                        'year'  => 2000,
+                        'poster'=>'images/movies/memento.jpg');
+
     //print('<pre>');
     //print_r($movies);
