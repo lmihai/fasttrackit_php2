@@ -97,10 +97,10 @@
                     "image1" => "images/actors/inception/leonardo.jpg",
                   
                     "actor2" => "Joseph Gordon-Levitt",
-                    "image2" => "images/actors/incemption/levit.jpg",
+                    "image2" => "images/actors/inception/levit.jpg",
                    
                     "actor3" => "Ellen Page",
-                    "image3" => "images/actors/incemption/page.jpg");
+                    "image3" => "images/actors/inception/page.jpg");
     $actors[12] =  array(
                     "actor1" => "Jamie Foxx",
                     "image1" => "images/actors/django/jamiefoxx.jpg",
