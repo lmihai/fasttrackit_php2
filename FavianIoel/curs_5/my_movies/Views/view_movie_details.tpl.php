@@ -1,3 +1,21 @@
+<html>
+<head>
+<style type="text/css">
+
+html {
+background: url(images/background.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+ background-size: cover;
+}
+ h1 , p , h2 , h3 , a , li{
+ 	color: white ;
+ }
+ </style>
+</head>
+<body>
+
 <center>
 <h1> <?php print($movie_details['title']); ?> </h1>
 <h2> <?php print($movie_details['year']); ?> </h2>
@@ -9,3 +27,5 @@
 
 <p><a href="movies.php">Back to movies</a></p>
 
+</body>
+</head>
