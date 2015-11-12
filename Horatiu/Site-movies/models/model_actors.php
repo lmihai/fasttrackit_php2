@@ -12,6 +12,10 @@ $actors[3] = array('name1' => 'Roberto Benigni', 'photo1' => 'images/actors/beni
 			 'name2' => 'Nicoletta Braschi', 'photo2' => 'images/actors/nicoletta.jpg',
 			 'name3' => 'Giorgio Cantarini', 'photo3' => 'images/actors/giorgio.jpg');
 
+
+/////////////////////
+
+
 /*
 
 $actors = array(

@@ -5,9 +5,8 @@
 <center>
 <h1> <?php print($movie_details['title']); ?> </h1>
 <h2> <?php print($movie_details['year']); ?> </h2>
-<img src="<?php print($movie_details['poster']); ?>">
+<img src="<?php print($movie_details['poster']); ?>" ID = "ppp">
 </center>
-<!--                   De aici am adaugat eu -->
 
 
 
@@ -18,4 +17,10 @@
 
 
 
+
+
+
 <?php echo '<p><a href="movies.php">Back to movies</a></p>'; ?>
+
+
+ 

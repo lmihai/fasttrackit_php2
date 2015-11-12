@@ -16,6 +16,8 @@ if (isset($_GET['movie'])) {
 
 
 
+
+
 include('views/view_movie_details.tpl.php');
 }
 

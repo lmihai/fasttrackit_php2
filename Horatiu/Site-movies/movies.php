@@ -1,6 +1,6 @@
 <html>
 <head>  <style type="text/css">
-
+<?php include('views/style.css'); ?>
 </style>
 
 </head>
