@@ -11,6 +11,14 @@ $actors[2] = array('name1' => 'Tim Roth', 'photo1' => 'images/actors/roth.jpg',
 $actors[3] = array('name1' => 'Roberto Benigni', 'photo1' => 'images/actors/benigni.jpg',
 			 'name2' => 'Nicoletta Braschi', 'photo2' => 'images/actors/nicoletta.jpg',
 			 'name3' => 'Giorgio Cantarini', 'photo3' => 'images/actors/giorgio.jpg');
+$actors[4] = array('name1' => 'Brad Pitt', 'photo1' => 'images/actors/pitt.jpg', 
+			 'name2' => 'Angelina Jolie', 'photo2' => 'images/actors/angelina.jpg',
+			 'name3' => 'Mélanie Laurent', 'photo3' => 'images/actors/melanie.jpg'
+				);
+$actors[5] = array('name1' => 'Antonio Banderas', 'photo1' => 'images/actors/banderas.jpg',
+			 'name2' => 'Rodrigo Santoro', 'photo2' => 'images/actors/rodrigo.jpg',
+			 'name3' => 'Juliette Binoche', 'photo3' => 'images/actors/juliette.jpg'
+				);
 
 
 /////////////////////
