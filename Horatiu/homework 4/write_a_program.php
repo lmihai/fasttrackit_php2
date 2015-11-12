@@ -23,17 +23,34 @@ for ($i=$start; $i <= $stop ; $i++)
 	elseif ($i == $multiplies_of_3) {
 		$multiplies_of_3 = $multiplies_of_3 + 3;
 		echo "Fast".$i."<br>";
-	}
-
-	
+	}	
 }
 
+?>
 
+<?php
+//sa adun numerele impreuna
 
+$array1 = {1, 2, 3, 4, 5, 6, 7};
+$array2 = {1, 2, 3, 4, 5, 6, 7};
+$array3 = ();
 
-
-
-
+for ($i=0; $i < count($array1); $i++) 
+{ 
+	for ($j=0; $j < count($array2); $j++)
+	{ 
+		if ($i == $j) 
+		{
+			$sum = $array1[$i] + $array2[$j];
+			$array3[] = $sum;		
+		}
+		
+	}
+}
+	for ($i=0; $i < count($array3) ; $i++) 
+	{ 
+		echo "Suma numerelor ".$array3[$i]."<br>";
+	}
 
 
 
