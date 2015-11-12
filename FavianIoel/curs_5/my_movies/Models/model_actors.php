@@ -2,8 +2,8 @@
 
  $actors = array();
     $actors[1] =  array(
-					         "actor1" => "Marlon Brando",
-					         "image1" => "images/actors/godfather/marlonbrado.jpg",
+					"actor1" => "Marlon Brando",
+					"image1" => "images/actors/godfather/marlonbrado.jpg",
                   
                     "actor2" => "Al Pacino",
                     "image2" => "images/actors/godfather/alpacino.jpg",
