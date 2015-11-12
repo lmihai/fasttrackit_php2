@@ -1,18 +1,9 @@
 <html>
 <head>
-<style type="text/css">
+         <style type="text/css">
+         <?php include('views/style.css'); ?>
+         </style>
 
-html {
-background: url(images/background.jpg) no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
- background-size: cover;
-}
- h1 , p , h2 , h3 , a , li{
- 	color: white ;
- }
- </style>
 </head>
 <body>
 
