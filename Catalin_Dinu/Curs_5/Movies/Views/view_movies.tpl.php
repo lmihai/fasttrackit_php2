@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="views/style.css">
 <h1>My movies</h1>
 <ul>
 <?php
