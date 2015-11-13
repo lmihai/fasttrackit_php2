@@ -1,46 +1,61 @@
 <?php
 $actors = array(
-			array(
-				array(
-					"actor" => "Marlon Brando",
-					"image" => "images/marlonbrando.jpg"
-					),
-				array(
-					"actor" => "Al Pacino",
-					"image" => "images/alpacino.jpg"
-					),
-				array(
-					"actor" => "James Caan",
-					"image" => "images/jamescaan.jpg"
-					)
-				),
-			array(
-				array(
-					"actor" => "Tim Roth",
-					"image" => "images/timroth.jpg"
-					),
-				array(
-					"actor" => "John Travolta",
-					"image" => "images/johntravolta.jpg"
-					),
-				array(
-					"actor" => "Samuel L. Jackson",
-					"image" => "images/samuelljackson.jpg"
-					)
-				),
-			array(
-				array(
-					"actor" => "Roberto Benigni",
-					"image" => "images/robertobenigni.jpg"
-					),
-				array(
-					"actor" => "Nicoletta Braschi",
-					"image" => "images/nicolettabraschi.jpg"
-					),
-				array(
-					"actor" => "Giorgio Cantarini",
-					"image" => "images/giorgiocantarini.jpg"
-					)
-				)
-			);
+					array(
+						"image" => "images/marlonbrando.jpg",
+						"actor" => "Marlon Brando"
+						),
+					array(						
+						"image" => "images/alpacino.jpg",
+						"actor" => "Al Pacino"
+						),
+					array(
+						"image" => "images/jamescaan.jpg",
+						"actor" => "James Caan",
+						),
+					array(
+						"image" => "images/timroth.jpg",
+						"actor" => "Tim Roth"
+						),
+					array(
+						"image" => "images/johntravolta.jpg",
+						"actor" => "John Travolta"
+						),
+					array(
+						"image" => "images/samuelljackson.jpg",
+						"actor" => "Samuel L. Jackson"
+						),
+					array(
+						"image" => "images/robertobenigni.jpg",
+						"actor" => "Roberto Benigni"
+						),
+					array(
+						"image" => "images/nicolettabraschi.jpg",
+						"actor" => "Nicoletta Braschi"
+						),
+					array(
+						"image" => "images/giorgiocantarini.jpg",
+						"actor" => "Giorgio Cantarini"
+						),
+					array(
+						"image" => "images/chrisodonnell.jpg",
+						"actor" => "Chris O'Donnell"
+						),
+					array(
+						"image" => "images/jamesrebhorn.jpg",
+						"actor" => "James Rebhorn"
+						),
+					array(
+						"image" => "images/jonvoight.jpg",
+						"actor" => "Jon Voight"
+						),
+					array(
+						"image" => "images/burtreynolds.jpg",
+						"actor" => "Burt Reynolds"
+						),
+					array(
+						"image" => "images/nedbeatty.jpg",
+						"actor" => "Ned Beatty"
+						)
+					);
+
 ?>
