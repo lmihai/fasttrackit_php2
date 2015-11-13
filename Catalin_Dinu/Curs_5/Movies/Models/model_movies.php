@@ -41,10 +41,23 @@ $movies = array(
 									  $actors[9],
 									  $actors[10],
 									  ),
+					),
+				array(
+					"title" => "Deliverance",
+					"year" => "1972",
+					"genres" => array($genres[4], $genres[1], $genres[5]),
+					"poster" => "images/deliverance.jpg",
+					"actors" => array($actors[11],
+									  $actors[12],
+									  $actors[13],
+									  ),
 					)
 				);
 function get_movie_details($movie_index = NULL) {
 	global $movies;
 	return $movies[$movie_index];
 }
+// function get_movie_actors($movie_index) {}
+
+
 ?>

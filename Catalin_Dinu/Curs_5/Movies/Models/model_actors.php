@@ -1,64 +1,61 @@
 <?php
 $actors = array(
 					array(
-						"actor" => "Marlon Brando",
-						"image" => "images/marlonbrando.jpg"
+						"image" => "images/marlonbrando.jpg",
+						"actor" => "Marlon Brando"
+						),
+					array(						
+						"image" => "images/alpacino.jpg",
+						"actor" => "Al Pacino"
 						),
 					array(
-						"actor" => "Al Pacino",
-						"image" => "images/alpacino.jpg"
-						),
-					array(
+						"image" => "images/jamescaan.jpg",
 						"actor" => "James Caan",
-						"image" => "images/jamescaan.jpg"
 						),
 					array(
-						"actor" => "Tim Roth",
-						"image" => "images/timroth.jpg"
+						"image" => "images/timroth.jpg",
+						"actor" => "Tim Roth"
 						),
 					array(
-						"actor" => "John Travolta",
-						"image" => "images/johntravolta.jpg"
+						"image" => "images/johntravolta.jpg",
+						"actor" => "John Travolta"
 						),
 					array(
-						"actor" => "Samuel L. Jackson",
-						"image" => "images/samuelljackson.jpg"
+						"image" => "images/samuelljackson.jpg",
+						"actor" => "Samuel L. Jackson"
 						),
 					array(
-						"actor" => "Roberto Benigni",
-						"image" => "images/robertobenigni.jpg"
+						"image" => "images/robertobenigni.jpg",
+						"actor" => "Roberto Benigni"
 						),
 					array(
-						"actor" => "Nicoletta Braschi",
-						"image" => "images/nicolettabraschi.jpg"
+						"image" => "images/nicolettabraschi.jpg",
+						"actor" => "Nicoletta Braschi"
 						),
 					array(
-						"actor" => "Giorgio Cantarini",
-						"image" => "images/giorgiocantarini.jpg"
+						"image" => "images/giorgiocantarini.jpg",
+						"actor" => "Giorgio Cantarini"
 						),
 					array(
-						"actor" => "Chris O'Donnell",
-						"image" => "images/chrisodonnell.jpg"
+						"image" => "images/chrisodonnell.jpg",
+						"actor" => "Chris O'Donnell"
 						),
 					array(
-						"actor" => "James Rebhorn",
-						"image" => "images/jamesrebhorn.jpg"
+						"image" => "images/jamesrebhorn.jpg",
+						"actor" => "James Rebhorn"
+						),
+					array(
+						"image" => "images/jonvoight.jpg",
+						"actor" => "Jon Voight"
+						),
+					array(
+						"image" => "images/burtreynolds.jpg",
+						"actor" => "Burt Reynolds"
+						),
+					array(
+						"image" => "images/nedbeatty.jpg",
+						"actor" => "Ned Beatty"
 						)
 					);
 
-/* $actors = array(
-0 =>  ARRAY(
-	ACTOR => 
-	IMAGE =>
-	),
-1 =>
-);
-
-$MOVIES_ACTORS = ARRAY(
-	MOVIE_KEY => ARRAY(1, 7, 9)
-	)
-
-
-	$ACTOES[7]
-*/
 ?>

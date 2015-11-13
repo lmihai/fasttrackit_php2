@@ -24,6 +24,5 @@
 		echo  "<br>";
 	}
 ?>
-</div>
 <p><a href="movies.php">Back to movies</a></p>
 
