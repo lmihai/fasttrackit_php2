@@ -1,6 +1,6 @@
 <link rel="stylesheet" type="text/css" href="views/style.css">
 <h1> <?php echo($movie_details["title"]); ?> </h1>
-<h2> <?php echo '<a href="movies_years.php?year=' . $movie_details["year"] .'">' . $movie_details["year"]; '</a>' ?> </h2>
+<h2> <?php echo '<a href="movies_years.php?year=' . $movie_details["year"] .'">' . $movie_details["year"] . '</a>' ?> </h2>
 <h3>Genres:
 <?php
 	foreach ($movie_details["genres"] as $movie_detail_genres) {
