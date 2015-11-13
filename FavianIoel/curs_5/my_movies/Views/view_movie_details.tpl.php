@@ -24,6 +24,7 @@
 
 
 </center>
+<h3>Genre:</h3>
 <?php
 	foreach ($movie_details["genres"] as $movie_detail_genres) {
 		echo'<a href="movies_genres.php?genre=' . $movie_detail_genres .'">' . $movie_detail_genres . "</a>" . " ";
