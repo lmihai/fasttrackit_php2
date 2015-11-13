@@ -10,13 +10,12 @@
 </h3>
 <img src="<?php echo($movie_details["poster"]); ?> ">
 <h3>Cast</h3>
+<div class="space">
 <?php
-function cast_actors() {
-	global $movie_details;
-foreach ($movie_details["actors"] as $movie_detail_cast) {
+ foreach ($movie_details["actors"] as $movie_detail_cast) {
 	foreach ($movie_detail_cast as $key => $movie_detail_actors) {
 			if ($key == 'image') {
-				echo  '<img src="'. $movie_detail_actors .'" style="width:45px;"> ';
+				echo  '<img src="'. $movie_detail_actors .'" style="height:65px;vertical-align:middle" vspace=5> ';
 			}
 			else {
 				echo  $movie_detail_actors;
@@ -24,8 +23,7 @@ foreach ($movie_details["actors"] as $movie_detail_cast) {
 		}
 		echo  "<br>";
 	}
-}
-cast_actors();
 ?>
+</div>
 <p><a href="movies.php">Back to movies</a></p>
 
