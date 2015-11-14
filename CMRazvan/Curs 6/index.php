@@ -12,7 +12,7 @@ print("Curs 6");
 <body>
 
 		<form name="form1" method="post" action="">
-				<textarea name="comment" form="usrform">Am reusit</textare>
+				<textarea name="comment" form="usrform">Adauga text</textarea>
 				<select>
 				  <option value="Yes">Yes</option>
 				  <option value="No">No</option>
