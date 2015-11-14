@@ -16,7 +16,7 @@ $movies = array(
 				"poster"=> "img/life.jpg"
 				),
 			);
-//return details about movie
+//create function which return details about movie
 function get_movie_details($movie_index = NULL) {
 	global $movies;
 	return $movies[$movie_index];
