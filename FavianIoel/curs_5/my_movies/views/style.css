@@ -1,0 +1,24 @@
+
+html {
+background: url(images/background.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+ background-size: cover;
+} 
+  p , h2 , h3 , a , li {
+  color: #c1d7d7 ;
+ }
+h1{
+	font-size: 70px;
+	color:white;
+}
+h2{
+	font-size: 40px;
+}
+h3{
+	font-size: 30px;
+}
+a , li , p{
+	font-size: 20px;
+}

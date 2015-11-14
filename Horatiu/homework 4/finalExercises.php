@@ -57,12 +57,7 @@ for ($i=1; $i < count($friends); $i++)
 		}
 	}
 }
-          echo "The biggest number is: ".$biggest_number;                                          
-
-
-
-
-
+          echo "The biggest number is: ".$biggest_number;    
 
 
 ?>
