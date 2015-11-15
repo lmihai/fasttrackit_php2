@@ -6,10 +6,8 @@
 	color: #333;
 	text-align: center;
 }
-
-
-
 </style>
+
 <div class="center">
 <h2>Cast:</h2>
 	<h3> 
@@ -20,4 +18,4 @@
 	</h3>
 </div>
 
-<p><a href="index.php">Back to movies</a></p>
+<p><a href="movies.php">Back to movies</a></p>

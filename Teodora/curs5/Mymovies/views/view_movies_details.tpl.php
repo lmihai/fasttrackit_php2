@@ -26,12 +26,10 @@ a:hover {
 </style>
 
 <div class="img">
-	<h1><?php print($movies_details['title']); ?></h1>
-
-	<h2><?php print($movies_details['year']); ?></h2>
-	<hr>
+	<h1> <?php echo($movies_details["title"]); ?> </h1>
+	<h2> <?php echo '<a href="movies_year.php?year=' . $movies_details["year"] .'">' . $movies_details["year"] . '</a>' ?> </h2>
 
 
-<img src="<?php print($movies_details['poster']); ?>">
+	<img src="<?php print($movies_details['poster']); ?>">
 </div>	
 
