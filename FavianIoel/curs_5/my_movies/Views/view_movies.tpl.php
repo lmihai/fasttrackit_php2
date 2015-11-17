@@ -1,7 +1,7 @@
 <html>
 
 <head>
-
+      
           <style type="text/css">
           <?php include('views/style.css'); ?>
           </style>
@@ -10,7 +10,10 @@
 <body>
 
    <center>
+
+
       <h1>My movies</h1>
+
   <ul>
 
        <?php for ($i = 1; $i <= count($movies); $i++) { ?>

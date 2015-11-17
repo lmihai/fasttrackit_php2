@@ -7,4 +7,9 @@
 	//print('<pre>');
 	//print_r($movies);
 
+	function get_movie_details($movie_index = NULL){
+		global $movies;
+		return $movies[$movie_index];
+	}
 
+	
