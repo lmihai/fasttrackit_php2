@@ -1,0 +1,206 @@
+<html>
+<head>
+	<title>Chestionar</title>
+	<style>	
+	.container {
+		width: 80%; 
+		margin: auto;		
+	}
+	.left{
+		float: left;
+		margin-left: 250px;
+	}
+	.right{
+		float: right;
+		margin-right: 250px;
+	}
+	.col {
+		float: left;
+		width: 33%;
+	}
+	.table {
+		width: 100%;
+		margin-left: 100px;
+		margin-right: 100px;	
+	}
+	.clear{
+		clear: both;
+	}
+	</style>
+</head>
+<body>
+	<form method="post" action="answer.php">
+		<div class="container">
+		<p class="left">Name(optional)<br/>		
+		<input name="name" type = "text">
+		</p>
+		<p class="right">
+		Email(optional)<br/>
+		<input name="email" type ="text">
+		</p>
+		</div>
+		<div class="clear"></div>
+
+	<div class="container">
+	<div class="col">
+	<p>		
+		I BOUGHT...<!-- INTREBARE1 -->
+		<div>
+		<input type="radio" name="intrebare1" value="Breackfast Food" id="q1a">
+		<label for="q1a">Breackfast Food</label><br />
+		<input type="radio" name="intrebare1" value="Backed Goods" id="q1b">
+		<label for="q1b">Backed Goods</label><br />
+		<input type="radio" name="intrebare1" value="Cake/Cupcakes" id="q1c">
+		<label for="q1c">Cake/Cupcakes</label><br />
+		<input type="radio" name="intrebare1" value="Beverage" id="q1d">
+		<label for="q1d">Beverage</label><br />
+		</div>		
+	</p>
+	</div>	<!-- end div intrebare 1 -->
+
+	<div class="col">
+	<p>		
+		It TASTED...<!-- INTREBARE2 -->
+		<div>
+		<input type="radio" name="intrebare2" value="Excellent" id="q2a">
+		<label for="q2a">Excellent</label><br />
+		<input type="radio" name="intrebare2" value="Good" id="q2b">
+		<label for="q2b">Good</label><br />
+		<input type="radio" name="intrebare2" value="Neutral" id="q2c">
+		<label for="q2c">Neutral</label><br />
+		<input type="radio" name="intrebare2" value="Bad" id="q2d">
+		<label for="q2d">Bad</label><br />
+		<input type="radio" name="intrebare2" value="Horrible" id="q2e">
+		<label for="q2e">Horrible</label><br />
+		</div>		
+	</p>
+	</div>	<!-- end div intrebare 2 -->
+
+	<div class="col">
+	<p>		
+		The STYLE was...<!-- INTREBARE3 -->
+		<div>
+		<input type="radio" name="intrebare3" value="Excellent" id="q3a">
+		<label for="q3a">Excellent</label><br />
+		<input type="radio" name="intrebare3" value="Good" id="q3b">
+		<label for="q3b">Good</label><br />
+		<input type="radio" name="intrebare3" value="Neutral"id="q3c">
+		<label for="q3c">Neutral</label><br />
+		<input type="radio" name="intrebare3" value="Bad" id="q3d">
+		<label for="q3d">Bad</label><br />
+		<input type="radio" name="intrebare3" value="Horrible" id="q3e">
+		<label for="q3e">Horrible</label><br />
+		</div>		
+	</p>
+	</div>	<!-- end div intrebare 3 -->
+	</div> <!-- end container -->
+
+	<div class="clear"></div>
+
+	<div class="container">
+	<div class ="table"><!-- primul tabel -->
+	<h2>How satisfied are you whith...</h2>
+	<p>	
+	<table border = "0">
+
+	<tr align=center>
+	<td width=75> </td>
+	<td width=75><b>Very Satisfied</b></td>
+	<td width=75><b>Satisfied</b></td>
+	<td width=75><b>Neutral</td>
+	<td width=75><b>Unsatisfied</b></td>
+	<td width=75><b>Very Unsatisfied</b></td>
+	</tr>
+
+	<tr align=center>
+	<td  align=left>
+	  The purchase<br>you made</td>
+	<td><input type="radio" name="purchase" value="Very satisfied"></td>
+	<td><input type="radio" name="purchase" value="satisfied"></td>
+	<td><input type="radio" name="purchase" value="neutral"></td>
+	<td><input type="radio" name="purchase" value="unsatisfied"></td>
+	<td><input type="radio" name="purchase" value="very unsatisfied"></td>
+	</tr>
+
+	<tr align=center>
+	<td  align=left>
+	  The service you <br>receive</td>
+	<td><input type="radio" name="service" value="Very satisfied"></td>
+	<td><input type="radio" name="service" value="satisfied"></td>
+	<td><input type="radio" name="service" value="neutral"></td>
+	<td><input type="radio" name="service" value="unsatisfied"></td>
+	<td><input type="radio" name="service" value="very unsatisfied"></td>
+	</tr>
+
+	<tr align=center>
+	<td  align=left>
+	   Our company<br> overall</td>
+	<td><input type="radio" name="overall" value="Very satisfied"></td>
+	<td><input type="radio" name="overall" value="satisfied"></td>
+	<td><input type="radio" name="overall" value="neutral"></td>
+	<td><input type="radio" name="overall" value="unsatisfied"></td>
+	<td><input type="radio" name="overall" value="very unsatisfied"></td>
+	</tr>
+
+	</table>
+	</div> <!-- end div tabel 1 -->
+
+	<br>
+	<br>
+	<div class ="table"><!-- AL DOILEA tabel -->
+
+	<h2>How likely are you...</h2>
+	<p>	
+	<table border = "0">
+
+	<tr align=center>
+	<td width=75> </td>
+	<td width=75><b>Very Satisfied</b></td>
+	<td width=75><b>Satisfied</b></td>
+	<td width=75><b>Neutral</td>
+	<td width=75><b>Unsatisfied</b></td>
+	<td width=75><b>Very Unsatisfied</b></td>
+	</tr>
+
+	<tr align=center>
+	<td  align=left>
+	  Buy from us<br>again</td>
+	<td><input type="radio" name="buy" value="Very satisfied"></td>
+	<td><input type="radio" name="buy" value="satisfied"></td>
+	<td><input type="radio" name="buy" value="neutral"></td>
+	<td><input type="radio" name="buy" value="unsatisfied"></td>
+	<td><input type="radio" name="buy" value="very unsatisfied"></td>
+	</tr>
+
+	<tr align=center>
+	<td  align=left>
+	 Recommend our <br>product to other</td>
+	<td><input type="radio" name="recprod" value="Very satisfied"></td>
+	<td><input type="radio" name="recprod" value="satisfied"></td>
+	<td><input type="radio" name="recprod" value="neutral"></td>
+	<td><input type="radio" name="recprod" value="unsatisfied"></td>
+	<td><input type="radio" name="recprod" value="very unsatisfied"></td>
+	</tr>
+
+	<tr align=center>
+	<td  align=left>
+	Recommend our<br>shop to other</td>
+	<td><input type="radio" name="recshop" value="Very satisfied"></td>
+	<td><input type="radio" name="recshop" value="satisfied"></td>
+	<td><input type="radio" name="recshop" value="neutral"></td>
+	<td><input type="radio" name="recshop" value="unsatisfied"></td>
+	<td><input type="radio" name="recshop" value="very unsatisfied"></td>
+	</tr>
+
+	</table>
+	<br>
+	<br>
+	</div> <!-- end div tabel 2 -->
+	<input type="submit" name="send" value="SEND SURVEY">
+	</div><!-- end container -->
+	
+		
+
+	</form>
+</body>
+</html>
