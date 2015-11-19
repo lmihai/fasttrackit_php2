@@ -43,6 +43,7 @@
 		<tr>
 			<td></td>
 			<td><input type="radio" name="tasted[]" value="Horrible">Horrible</td>
+			<td><input type="radio" name="style[]" value="Horrible">Horrible</td>
 		</tr>
 	</table>
 	<p>How satisfied are you with...*</p>
