@@ -83,3 +83,13 @@ if(isset($_POST["reccommend_shop"])) {
 	}
 }
 ?>
+<html>
+<head>
+	<title>ANSWER</title>
+</head>
+<body>
+<form action="survey.php">
+	<input type="submit" value="Take the survey again">
+</form>
+</body>
+</html>
