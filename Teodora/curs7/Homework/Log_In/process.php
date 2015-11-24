@@ -1,7 +1,8 @@
 <?php
 
 $username = $_POST['username'];
-$password = $_POST['password'];
+$password = md5($_POST['password']);
+//$passwordmd5 = md5($password);
 
 require_once("connect.php");
 /*
@@ -16,12 +17,15 @@ if(($username == $row['user_name']) && ($password == $row['user_password'])) {
 	//echo $_SESSION['user_id'];
 	//Then redirect to another page, user.php
 	header("Location:user.php");
+	//verificare
+	//echo "Usename: " .$username. "<br>";
+	//echo "Password: " . $password. ".";	
     exit();
 }
 else{		
 	echo "<h3>Invalid login information. Please try again.</h3><br>";
 	echo "<a href ='login.php'><strong>Back</strong></a>";
-	//header("Location:login.php");
+	//header("Location:login.php"); nu!
 	exit();
 }
 
