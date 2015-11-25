@@ -35,7 +35,8 @@ if(isset($_POST["username"]) && isset($_POST["password"])) {
             unset($_SESSION['user_id']);
         }
 	}
-
+    // Redirecting To Other Page
+    header('Location: http://localhost/fasttrackit_php2/Catalin_Dinu/Curs_7/user.php');
 }
 ?>
 
