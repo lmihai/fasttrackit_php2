@@ -1,44 +1,42 @@
 <?php
+if (!isset($_SESSION)) {
+    session_start();           // start the session
+}
 
 $server = "localhost";
 $db_user = "root";
 $db_pass = "";
 $db_name = "homework_7";
 
-$db_conn = mysql_connect($server, $db_user, $db_pass);
-
-
+// Establishing connection with server by passing server_name, user_id and password as a parameter
+$db_conn = mysqli_connect($server, $db_user, $db_pass);
 if (!$db_conn) {
     echo "Unable to connect to DB: " . mysql_error();
     exit;
 }
-
-if (!mysql_select_db("homework_7")) {
+//  Selecting database
+if (!mysqli_select_db($db_conn, "homework_7")) {
     echo "Unable to select homework_7: " . mysql_error();
     exit;
 }
-if(isset($_POST["username"]) && isset($_POST["password"])) {
-	$user = $_POST["username"];
-	$pass = MD5($_POST["password"]);
 
- $sql = 'SELECT * FROM login_form WHERE username = "' . $user . '" and password = "' . $pass . '"';
-	$result = mysql_query($sql, $db_conn) or die ( "Error : ". mysql_error() );
-	$row = mysql_fetch_array($result);
+if(isset($_POST["username"]) && isset($_POST["password"])) {
+	$user = $_POST["username"];     // define username
+	$pass = MD5($_POST["password"]);    // define password
+    // SQL query to fetch information of registerd users and finds user match.
+    $sql = 'SELECT * FROM login_form WHERE username = "' . $user . '" and password = "' . $pass . '"';
+	$result = mysqli_query($db_conn, $sql) or die ( "Error : ". mysql_error() );
+	$row = mysqli_fetch_array($result);
 	if($row["username"]==$user && $row["password"]==$pass) {
-    	echo"Excelent";
+        $_SESSION["user_id"] = $row["id"];      // Initializing Session
 		}
 	else {
-    	echo"Sorry";
+        if (isset($_SESSION['user_id'])) {
+            unset($_SESSION['user_id']);
+        }
 	}
 
 }
-
-/*
-if (isset($_SESSION["username"])) {
-	header ('Locaction: http://localhost/fasttrackit_php2/Catalin_Dinu/Curs_7/user.php');
-}
-*/
-
 ?>
 
 <html>
