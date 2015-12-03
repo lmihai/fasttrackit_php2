@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>The For's</title>
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link rel="shortcut icon" href="css/img/rfiladelfia.ico">
+	</head>
+<body>
+	<h1><center>Bine ati venit!</center></h1>
+	<center><div class="div1">
+		<div class="div2"><h3>Logheaza-te</h3></div>
+		<center><form name="login" method="post" action="thefors.php">
+			<input class="login" name="textfield" type="text" username="" value="username">
+			<br>
+			<input class="login" type="text" password="" value="password">
+			<br>
+			<input class="button" type="submit" value="Login">
+			
+		</form></center>
+	</div></center>
+	<?php
+		print $_POST['textfield'];
+	?>
+</body>
+</html>
