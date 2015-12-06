@@ -3,7 +3,8 @@ require_once('connection.php');
 if(isset($_GET['ID'])){
 	$courseID = $_GET['ID'];
 	$sql_delete = "DELETE FROM courses 
-					WHERE 'ID' = '$courseID'";
+					WHERE ID = $courseID";
+	//print ($sql_delete);				
 	$result = mysqli_query($db_conn,$sql_delete);
 	if($result) {
 		echo "<br>";
