@@ -55,7 +55,7 @@ while($row = mysqli_fetch_array($result)) {
 	echo '</td>';
 
 	echo '<td>';
-	echo '<a href="delete.php">Delete<a>';
+	echo '<a href="delete.php?ID= '.$row["ID"].'">Delete<a>';
 	echo '</td>';
 }
 echo '</table>';
