@@ -34,3 +34,4 @@
   	echo '<input type = "submit" value = "Add course">';
   echo '</form>';
   echo '</div>';
+
