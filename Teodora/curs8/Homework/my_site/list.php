@@ -25,7 +25,6 @@ require_once('connection.php');
 //select all courses 
 $sql = "SELECT * FROM courses";
 
-
 //display data into a table
 $result = mysqli_query($db_conn, $sql) or die 
 (error_reporting(E_ALL ^ E_DEPRECATED));
@@ -51,7 +50,7 @@ while($row = mysqli_fetch_array($result)) {
 	echo '</td>';
 
 	echo '<td>';
-	echo '<a href="edit.php">Edit<a>';
+	echo '<a href="edit.php?ID= '.$row["ID"] .'">Edit<a>';
 	echo '</td>';
 
 	echo '<td>';
