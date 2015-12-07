@@ -8,9 +8,7 @@
 	.pull{
 		margin-right: 35px;
 	}
-	.pull2{
-		margin-right: 70px;
-	}
+	
 </style>
 <?php
 //create a page called edit.php
@@ -35,14 +33,12 @@ if(isset($_GET['ID'])){
 	  	echo '<br>';
 	  	echo '<label class="pull" for="Trainer"><strong>Trainer: </strong></label>';
 	  	echo '<input type = "text" name = "Trainer" value ="'.$row['Trainer'].'">';
-	  	echo '<br>';
-	  	echo '<br>';
-	  	echo '<label class="pull2" for="ID"><strong>ID: </strong></label>';
-	  	echo '<input type = "password" name = "ID" value="'.$row['ID'].'">';
+	  	  	
+	  	echo '<input type = "hidden" name = "ID" value="'.$row['ID'].'">';
 	  	echo '<br>';
 	  	echo '<br>';
 	  	echo '<input type = "submit" value = "UPDATE">';
 	echo '</form>';
 	echo '</div>';	
-	
-}//end if(isset)
+	}//end if(isset)
+	//on submit, verify if the text field are filled(not empty)
