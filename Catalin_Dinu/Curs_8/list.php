@@ -10,15 +10,27 @@ $db_conn = mysqli_connect($server, $db_user, $db_pass, $db_name);
 if (!$db_conn) {
 	die("Connection failed: " . mysqli_connect_error());
 }
-$sql = "SELECT CourseName, Trainer FROM courses";
+// $sql = "SELECT * FROM courses";
+$sql = "SELECT courses.ID, courses.CourseName, courses.Trainer, Count(students.ID) AS number FROM courses LEFT JOIN students ON students.Course = courses.ID GROUP  BY courses.ID";
 $result = mysqli_query($db_conn, $sql);
 if (mysqli_num_rows($result) > 0) {
-	echo "<table style='width:100%'><tr><th>Course name</th><th>Trainer</th><th colspan='2'>Operations</th></tr>";
+	echo "<table width='80%' border=0>
+			<tr bgcolor='#CCCCCC'>
+				<td>Course name</td>
+				<td>Trainer</td>
+				<td>Operations</td>
+				<td>Students</td>
+			</tr>";
 	// output data of each row
-	while($row = mysqli_fetch_assoc($result)) {
-		echo "<tr><td>" . $row["CourseName"] . "</td><td>" . $row["Trainer"] . "</td><td><a href='edit.php?ID=[course ID]'>edit</a></td><td>" . "</td><td><a href='delete.php?ID=[course ID]'>delete</a></td></tr>" . "<br>";
+	while ($row = mysqli_fetch_assoc($result)) {
+		echo "<tr>";
+		echo "<td>" . $row['CourseName'] . "</td>";
+		echo "<td>" . $row['Trainer'] . "</td>";
+		echo "<td><a href=\"edit.php?id=$row[ID]\">Edit</a> | <a href=\"delete.php?id=$row[ID]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";
+		echo "<td>" . $row['number'] . "</td>";
 	}
-	echo "</table>" . "<br>";
+	echo "</table>";
+	echo "<br>";
 }
 else {
 	echo "0 results";
@@ -28,3 +40,4 @@ echo "<a href='add.php'>Add a new course</a>";
 
 mysqli_close($db_conn);
 ?>
+
