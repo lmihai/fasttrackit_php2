@@ -11,7 +11,7 @@ if (!$db_conn) {
 	die("Connection failed: " . mysqli_connect_error());
 }
 // $sql = "SELECT * FROM courses";
-$sql = "SELECT courses.ID, courses.CourseName, courses.Trainer, Count(students.ID) AS number FROM courses LEFT JOIN students ON students.Course = courses.ID GROUP  BY courses.ID";
+$sql = "SELECT courses.ID, courses.CourseName, courses.Trainer, Count(students.ID) AS number FROM courses LEFT JOIN students ON students.Course = courses.ID GROUP BY courses.ID";
 $result = mysqli_query($db_conn, $sql);
 if (mysqli_num_rows($result) > 0) {
 	echo "<table width='80%' border=0>

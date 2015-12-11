@@ -34,31 +34,25 @@ if(isset($_POST['add_course'])) {
 <body>
 <form method="post" action="add.php">
 	<table width="400" border="0" cellspacing="1" cellpadding="2">
-
 		<tr>
 			<td width="100">Course name</td>
-			<td><input name="CourseName" type="text" id="CourseName"></td>
+			<td><input name="CourseName" type="text"></td>
 		</tr>
-
 		<tr>
 			<td width="100">Trainer</td>
-			<td><input name="Trainer" type="text" id="Trainer"></td>
+			<td><input name="Trainer" type="text"></td>
 		</tr>
-
 		<tr>
 			<td width="100"> </td>
 			<td> </td>
 		</tr>
-
 		<tr>
 			<td width="100"> </td>
 			<td>
-				<input name="add_course" type="submit" id="add_course" value="Add course">
+				<input name="add_course" type="submit" value="Add course">
 			</td>
 		</tr>
-
 	</table>
 </form>
 </body>
 </html>
-
