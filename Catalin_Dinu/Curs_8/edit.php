@@ -25,7 +25,7 @@ else {
 		$course_name = $_POST["CourseName"];
 		$trainer = $_POST["Trainer"];
 		$row_id = $_POST['row_id'];
-		sql = "UPDATE Courses SET CourseName = '$course_name', Trainer = '$trainer' WHERE ID = '" . $row_id . "'";
+		$sql = "UPDATE Courses SET CourseName = '$course_name', Trainer = '$trainer' WHERE ID = '" . $row_id . "'";
 		$result = mysqli_query($db_conn, sql) or die("Could not update" . mysqli_connect_error());
 		header('location:list.php');
 		mysqli_close($db_conn);
