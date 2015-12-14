@@ -16,7 +16,7 @@
 <body>
 
 <div class="container">
-	<div class="jumbotron"
+	<div class="jumbotron">
 
     <p><a class="btn btn-default" href="movies.php" role="button">Home</a></p>
        <center>
