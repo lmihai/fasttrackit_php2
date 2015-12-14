@@ -16,8 +16,25 @@
      ?>
 
        <form name="form1" method="post" action="">
-        Name:<input type="text" name="Name" value=""><br><br>
-             <textarea rows="4" cols="50" name="comment">Enter text here...</textarea><br><br>
+        Name:<input type="text" name="myName" value="">
+        <br>
+        <br>
+             <textarea rows="4" cols="50" name="myTextArea">Enter text here...</textarea>
+             <br>
+             <br>
+             <select>
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+                <option value="maybe">maybe</option>
+             </select>
+             <br>
+             <br>
+             <p>ho can see this? :</p>
+                <label for="onlyme">only me</label>
+                <input type="radio" name="privacy" id="onlyme" value="onlyme">
+                <label for="everybody">everybody</label>
+                <input type="radio" name="privacy" id="everybody" value="everybody">
+
              <input type="submit" name="submit1" value="Send">
        </form>
   </body>
