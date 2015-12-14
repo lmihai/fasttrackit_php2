@@ -11,9 +11,7 @@ $db_conn = mysqli_connect($server, $db_user, $db_pass, $db_name);
 if (!$db_conn) {
 	die("Connection failed: " . mysqli_connect_error());
 	}
-if (isset($_GET['id'])) {
-	$id = $_GET['id'];
-}
+
 if (!isset($_POST['update'])) {
 	if (isset($_GET['id'])) {
 		$id = $_GET['id'];
@@ -22,13 +20,13 @@ if (!isset($_POST['update'])) {
 		$row = mysqli_fetch_assoc($result);
 	}
 }
-if (isset($_POST['update'])) {
+else {
 	if (isset($_POST["CourseName"]) && isset($_POST["Trainer"]) && $_POST["CourseName"] != "" && $_POST["Trainer"] != "") {
 		$course_name = $_POST["CourseName"];
 		$trainer = $_POST["Trainer"];
-		$id = $_POST['row_id'];
-		$sql1 = "UPDATE Courses SET CourseName = '$course_name', Trainer = '$trainer' WHERE ID = '" . $id . "'";
-		$result = mysqli_query($db_conn, $sql1) or die("Could not update" . mysqli_connect_error());
+		$row_id = $_POST['row_id'];
+		$sql = "UPDATE Courses SET CourseName = '$course_name', Trainer = '$trainer' WHERE ID = '" . $row_id . "'";
+		$result = mysqli_query($db_conn, sql) or die("Could not update" . mysqli_connect_error());
 		header('location:list.php');
 		mysqli_close($db_conn);
 		}
@@ -46,12 +44,12 @@ if (isset($_POST['update'])) {
 			<table width="400" border="0" cellspacing="1" cellpadding="2">
 				<tr>
 					<td width="100">Course name</td>
-					<td><input name="CourseName" type="text" placeholder='<?php echo $row["CourseName"] ?>'>
+					<td><input name="CourseName" required type="text" placeholder='<?php echo $row["CourseName"] ?>'>
 					</td>
 				</tr>
 				<tr>
 					<td width="100">Trainer</td>
-					<td><input name="Trainer" type="text" placeholder='<?php echo $row["Trainer"] ?>'>
+					<td><input name="Trainer" required type="text" placeholder='<?php echo $row["Trainer"] ?>'>
 				</td>
 				</tr>
 				<tr>
