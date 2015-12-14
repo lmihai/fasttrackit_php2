@@ -6,9 +6,15 @@
 
 		<form name="form1" method="get" action="">
 			<input type ="text" value="username">
-			<input typee = "submit" name = "submit1" value = "login">
+			<input type = "submit" name = "submit1" value = "login">
 		
 		</form>
+		<form name="form1" method="post" action="">
+			<input type ="text" value="username">
+			<input type = "submit" name = "submit1" value = "login">
+		
+		</form>
+
 
 
 
