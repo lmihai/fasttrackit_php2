@@ -10,6 +10,7 @@
 
 
 
+
 <p><?php echo $movie_actors['name1']; ?> </p>	<img src="<?php echo $movie_actors['photo1']; ?>">
 <p><?php echo $movie_actors['name2']; ?> </p>	<img src="<?php echo $movie_actors['photo2']; ?>">
 <p><?php echo $movie_actors['name3']; ?> </p>	<img src="<?php echo $movie_actors['photo3']; ?>">
