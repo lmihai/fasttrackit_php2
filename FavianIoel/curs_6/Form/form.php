@@ -15,14 +15,14 @@
      */
      ?>
 
-       <form name="form1" method="post" action="">
+       <form name="form1" method="post" action="output.php">
         Name:<input type="text" name="myName" value="">
         <br>
         <br>
              <textarea rows="4" cols="50" name="myTextArea">Enter text here...</textarea>
              <br>
              <br>
-             <select>
+             <select name="mySelect" >
                 <option value="yes">yes</option>
                 <option value="no">no</option>
                 <option value="maybe">maybe</option>
@@ -31,11 +31,12 @@
              <br>
              <p>ho can see this? :</p>
                 <label for="onlyme">only me</label>
-                <input type="radio" name="privacy" id="onlyme" value="onlyme">
+                <input type="radio" name="myPrivacy" id="onlyme" value="onlyme">
                 <label for="everybody">everybody</label>
-                <input type="radio" name="privacy" id="everybody" value="everybody">
+                <input type="radio" name="myPrivacy" id="everybody" value="everybody">
 
              <input type="submit" name="submit1" value="Send">
        </form>
+      
   </body>
 </html>
