@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Login Form</title>
+	<title>Form</title>
 </head>
 <body>
    <p>Form prin metoda "get" si actiunea catre alt fisier!</p>
@@ -11,7 +11,7 @@
 		</form>
         <hr>
         <p>Form cu metoda post si actiunea catre acest fisier!</p>
-		<form name="form1" method="post" action="form.php">
+		<form name="form1" method="post" action="learnform.php">
 			<input type ="text" value="username">
 			<input type = "submit" name = "submit1" value = "login">
 		
@@ -30,8 +30,6 @@
         	<input type ="text" value="username">
         	<input type = "submit" name="submit1" value="enter!">
         </form>
-
-
 
 </body>
 </html>
