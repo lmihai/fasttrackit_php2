@@ -8,11 +8,7 @@
 
 	<h1>OUTPUTS</h1>
        <?php
-       print($_POST['myName']);
-       print("<br>");
-       print($_POST['myTextArea']);
-       print("<br>");
-       print($_POST['mySelect']);
+       echo "Hello my name is <strong>" .$_POST['myName']."</strong> and i just submitted: <strong>". $_POST['myTextArea']."</strong>  with option <strong>".$_POST['mySelect']."</strong> .";
        ?>
 </center>
 
