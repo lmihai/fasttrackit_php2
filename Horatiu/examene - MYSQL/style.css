@@ -1,0 +1,4 @@
+table, tr, th, td {border : 2px solid black}
+table {border-collapse: collapse;}
+tr, td, th { padding: 7px;}
+table td a {margin-left: 7px;}
