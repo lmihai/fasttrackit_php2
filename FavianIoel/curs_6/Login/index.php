@@ -11,10 +11,10 @@
 		  	<div>
 
 				 <form name="login" method="post" action="home.php">
-				  <input type="text" name="username"  placeholder="username">
+				  <input type="text" name="username"  placeholder="username" required>
 				  <br>
 				  <br>
-				  <input type="password" name="password" placeholder="password">
+				  <input type="password" name="password" placeholder="password" required>
 				  <br>
 				  <br>
 				     <p class="remember_me">

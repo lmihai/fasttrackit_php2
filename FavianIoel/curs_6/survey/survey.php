@@ -36,39 +36,39 @@
      <div class="col-md-4 ">
       <p>I BOUGHT...*</p>
                 <label for="Breackfast Food">Breackfast Food</label>
-                <input type="radio" name="bought" id="Breackfast Food" value="Breackfast Food"><br>
+                <input type="radio" name="bought" id="Breackfast Food" value="Breackfast Food" required><br>
                 <label for="BakedGoods">Baked Goods</label>
-                <input type="radio" name="bought" id="BakedGoods" value="BakedGoods"><br>
+                <input type="radio" name="bought" id="BakedGoods" value="BakedGoods" required><br>
                 <label for="Cake/Cupcakes">Cake/Cupcakes</label>
-                <input type="radio" name="bought" id="Cake/Cupcakes" value="Cake/Cupcakes"><br>
+                <input type="radio" name="bought" id="Cake/Cupcakes" value="Cake/Cupcakes" required><br>
                 <label for="Beverage">Beverage</label>
-                <input type="radio" name="bought" id="Beverage" value="Beverage"><br><br>
+                <input type="radio" name="bought" id="Beverage" value="Beverage" required><br><br>
     </div><!-- /col-md-4 -->
          <div class="col-md-4 ">
           <p>It TASTED...*</p>
                 <label for="Excellent">Excellent</label>
-                <input type="radio" name="tasted" id="Excellent" value="Excellent"><br>
+                <input type="radio" name="tasted" id="Excellent" value="Excellent" required><br>
                 <label for="Good">Good</label>
-                <input type="radio" name="tasted" id="Good" value="Good"><br>
+                <input type="radio" name="tasted" id="Good" value="Good" required><br>
                 <label for="Neutral">Neutral</label>
-                <input type="radio" name="tasted" id="Neutral" value="Neutral"><br>
+                <input type="radio" name="tasted" id="Neutral" value="Neutral" required><br>
                 <label for="Bad">Bad</label>
-                <input type="radio" name="tasted" id="Bad" value="Bad"><br>
+                <input type="radio" name="tasted" id="Bad" value="Bad" required><br>
                 <label for="Horrible">Horrible</label>
-                <input type="radio" name="tasted" id="Horrible" value="Horrible"><br>
+                <input type="radio" name="tasted" id="Horrible" value="Horrible" required><br>
     </div><!-- /col-md-4 -->
          <div class="col-md-4 ">
           <p>The STYLE was...*</p>
                 <label for="Excellent">Excellent</label>
-                <input type="radio" name="style" id="Excellent" value="Excellent"><br>
+                <input type="radio" name="style" id="Excellent" value="Excellent" required><br>
                 <label for="Good">Good</label>
-                <input type="radio" name="style" id="Good" value="Good"><br>
+                <input type="radio" name="style" id="Good" value="Good" required><br>
                 <label for="Neutral">Neutral</label>
-                <input type="radio" name="style" id="Neutral" value="Neutral"><br>
+                <input type="radio" name="style" id="Neutral" value="Neutral" required><br>
                 <label for="Bad">Bad</label>
-                <input type="radio" name="style" id="Bad" value="Bad"><br>
+                <input type="radio" name="style" id="Bad" value="Bad" required><br>
                 <label for="Horrible">Horrible</label>
-                <input type="radio" name="style" id="Horrible" value="Horrible"><br>
+                <input type="radio" name="style" id="Horrible" value="Horrible" required><br>
     </div><!-- /col-md-4 -->
 
     </div>

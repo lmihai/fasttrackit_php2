@@ -15,7 +15,7 @@
 
         <ul   class="nav nav-pills pull-right" role="tablist" >
           <li><a href="#">Contact</a></li>
-          <li><a href="login.php" >Logout</a></li>
+          <li><a href="index.php" >Logout</a></li>
              
         </ul>
       </div>
