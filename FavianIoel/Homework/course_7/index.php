@@ -23,7 +23,7 @@ $sql = "CREATE TABLE loginform . users (
 	)";
  $sql = "INSERT INTO loginform . users (username,password) VALUES('admin','".md5('admin')."')";
 if ($conn->query($sql) === TRUE) {
-    echo "Database created successfully";
+    echo "Database created successfully : check in the PHPMyAdmin for loginform database if you  won't believe me .:))";
 } else {
     echo "Error creating database: " . $conn->error;
 }
@@ -48,38 +48,4 @@ echo "Connected successfully";
 
 ///////////////////////////////////
 }
-?>
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Login Form</title>
-</head>
-<body>
-
-	<center>
-		<div class="login">
-		 <div class="titlu">Login</div>
-		  	<div>
-
-				 <form name="login" method="post" action="home.php">
-				  <input type="text" name="username"  placeholder="username" required>
-				  <br>
-				  <br>
-				  <input type="password" name="password" placeholder="password" required>
-				  <br>
-				  <br>
-				     <p class="remember_me">
-                        <label>
-                          <input type="checkbox" name="remember_me" id="remember_me">
-                            Remember me on this computer
-                        </label>
-                     </p>
-				  <input type="submit" name="submit" value="Login">
-				 </form>
-		   </div>
-	   </div>
-	</center>
-	
-	
-</body>
-</html>
+include('login.php');

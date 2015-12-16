@@ -70,3 +70,10 @@ input[type=submit] {
      padding:5px 15px; 
      border:#4d727f solid 2px;
     }
+.fail {
+      width: 240px;
+    height: auto;
+    overflow: hidden;
+     padding:5px 15px; 
+     border:  #800000 solid 3px;
+}
