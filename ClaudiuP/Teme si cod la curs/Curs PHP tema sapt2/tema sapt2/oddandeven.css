@@ -1,0 +1,30 @@
+
+.odd
+	{
+/*This is where I set the color value of "odd" class to green as requested*/
+		color: #00FF00;
+
+		font-family: "SmallCaps", sans-serif;
+		font-size: 2em;
+		font-weight: bold;
+		font-variant: small-caps;
+		text-align: center;
+		margin-top: 1.0em;
+		margin-bottom: 0.5em;
+
+	}
+	
+.even
+	{
+/*This is where I set the color value of "even" class to red as requested*/
+		color: red;
+
+		font-family: "SmallCaps", sans-serif;
+		font-size: 2em;
+		font-weight: bold;
+		font-variant: small-caps;
+		text-align: center;
+		margin-top: 1.0em;
+		margin-bottom: 0.5em;
+
+	}
