@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 
 // Create database
 $sql = "CREATE DATABASE loginform";
-$sql = "CREATE TABLE loginform . users (
+$sql = "CREATE TABLE loginform.users (
 	ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	username VARCHAR(32) NOT NULL,
 	password VARCHAR(128) NOT NULL
