@@ -93,7 +93,7 @@
 		</tr>
 		<tr>
 			<td>Buy from us again.</td>
-			<th><input type="radio" name="buy[]" value="Very Satisfied"></th>
+			<th><input type="radio" name="likely[buy_from_us][]" value="Very Satisfied"></th>
 			<th><input type="radio" name="buy[]" value="Satisfied"></th>
 			<th><input type="radio" name="buy[]" value="Neutral"></th>
 			<th><input type="radio" name="buy[]" value="Unsatisfied"></th>

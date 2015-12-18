@@ -10,7 +10,7 @@ $db_conn = mysqli_connect($server, $db_user, $db_pass, $db_name);
 if (!$db_conn) {
 	die("Connection failed: " . mysqli_connect_error());
 }
-$sql = "SELECT courses.CourseName, students.ID, students.FirstName, students.LastName FROM students LEFT JOIN courses ON students.Course = courses.ID GROUP BY students.ID";
+$sql = "SELECT students.ID as studentID, courses.ID as courseID, students.FirstName, students.LastName, courses.CourseName FROM students LEFT JOIN courses ON students.Course = courses.ID";
 $result = mysqli_query($db_conn, $sql);
 if (mysqli_num_rows($result) > 0) {
 	echo "<table width='80%' border=0>
@@ -22,9 +22,9 @@ if (mysqli_num_rows($result) > 0) {
 	// output data of each row
 	while ($row = mysqli_fetch_assoc($result)) {
 		echo "<tr>";
-		echo "<td>" . $row['FirstName'] ." " .  $row['LastName']. "</td>";
+		echo "<td><a href='student_details.php?id=$row[studentID]'>" . $row['FirstName'] ." " .  $row['LastName']. "</a></td>";
 		echo "<td>" . $row['CourseName'] . "</td>";
-		echo "<td><a href=\"edit_student.php?id=$row[ID]\">Edit</a> | <a href=\"delete_student.php?id=$row[ID]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a> | <a href=\"\">Upload photo</a> | <a href=\"\">Upload CV</a></td>";
+		echo "<td><a href=\"edit_student.php?id=$row[studentID]\">Edit</a> | <a href=\"delete_student.php?id=$row[studentID]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a> | <a href=\"student_photo.php?id=$row[studentID]\">Upload photo</a> | <a href=\"student_cv.php?id=$row[studentID]\">Upload CV</a></td>";
 	}
 	echo "</table>";
 	echo "<br>";
