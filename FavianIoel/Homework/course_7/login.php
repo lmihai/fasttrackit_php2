@@ -10,11 +10,11 @@
 		 <div class="titlu">Login</div>
 		  	<div>
 
-				 <form name="login" method="post" action="home.php">
-				  <input type="text" name="username"  placeholder="username">
+				 <form name="login" method="post" action="validation.php">
+				  <input type="text" name="username"  placeholder="username" required>
 				  <br>
 				  <br>
-				  <input type="password" name="password" placeholder="password">
+				  <input type="password" name="password" placeholder="password" required>
 				  <br>
 				  <br>
 				     <p class="remember_me">
@@ -28,5 +28,7 @@
 		   </div>
 	   </div>
 	</center>
+	
+	
 </body>
 </html>

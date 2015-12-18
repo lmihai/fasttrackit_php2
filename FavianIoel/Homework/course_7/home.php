@@ -26,17 +26,9 @@
       
         <h1>Home</h1>
         <p><div class="hello">
-            <?php 
-           echo "Hello ".$_POST["username"].", your password ".$_POST["password"].
-           " was correct.";
-             ?>
-          </div></p>
-          <p><div class="remember">
-          	<?php 
-               if (isset($_POST['remember_me'])) {
-               	echo "Yeeey you want us to remember you !!!";
-               } else echo "Oh no... yu chose that we'll forget you :(";
-          	 ?>
+            <?php
+             echo "You are logged in";
+            ?>
           </div></p>
         
 
