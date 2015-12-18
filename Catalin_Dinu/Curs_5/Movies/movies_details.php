@@ -1,4 +1,3 @@
-<link rel="stylesheet" type="text/css" href="views/style.css">
 <?php
 include("models/model_movies.php");
 include("models/model_actors.php");
