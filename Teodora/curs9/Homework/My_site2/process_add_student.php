@@ -46,9 +46,23 @@ if($valid){
 	echo 'Cursul: ' . $course;
 	echo 'Nota: ' . $score;
 	*/
-	
-	// create a SQL query to insert the new student in the database
-	
-}
 
+	// create a SQL query to insert the new student in the database
+	//connection to db
+	require_once('connection.php');
+	$sql = "INSERT INTO students (FirstName, LastName, Course, score) 
+			VALUES ('$first_name', '$last_name', '$course', '$score')";
+
+	$result = mysqli_query($db_conn,$sql);
+	echo "<strong>Success!</strong><br>";
+	echo "Student named: " . $first_name . ' ' . $last_name . 
+	" with score: " .$score. " for course: " . $course .
+	' was successfully added in database!';
+	echo '<br>';	
+	}
+	else{
+		echo "ERROR";
+		error_reporting(E_ALL ^ E_DEPRECATED);
+	}	
 //redirect to students.php	
+echo '<a href = "students.php">Go back to the students list </a>';

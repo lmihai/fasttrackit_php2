@@ -1,6 +1,6 @@
 <style>
 	div {
-		width: 600px;
+		width: 650px;
 		margin-left: auto;
 		margin-right: auto;	
 		margin-top: 70px;			
