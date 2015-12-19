@@ -37,13 +37,13 @@ echo '<form method = "post" action="process_add_student.php">';
   	echo '<br>';
   	echo '<label for="Course" class="pull1"><strong>Course </strong></label>';
   	echo '<select name = "courselist">';
-  		echo '<option value="1">Introduction in testing</option>';
-  		echo '<option value="1">PHP</option>';
-  		echo '<option value="1">Web development</option>';
-  		echo '<option value="1">HTML5 and CSS3</option>';
-  		echo '<option value="1">Web design</option>';
-  		echo '<option value="1">PHP&MySQL</option>';
-  		echo '<option value="1">Responsive Web design</option>';
+  		echo '<option value="Introduction in testing">Introduction in testing</option>';
+  		echo '<option value="PHP">PHP</option>';
+  		echo '<option value="Web development">Web development</option>';
+  		echo '<option value="HTML5 and CSS3">HTML5 and CSS3</option>';
+  		echo '<option value="Web design">Web design</option>';
+  		echo '<option value="PHP&MySQL">PHP&MySQL</option>';
+  		echo '<option value="Responsive Web design">Responsive Web design</option>';
   	echo '</select>';	
   	echo '<br>';
   	echo '<br>';
@@ -56,6 +56,4 @@ echo '<form method = "post" action="process_add_student.php">';
 echo '</form>';
 echo '</div>';
 
-//on submit, verify that all fields are correctly filled
-// create a SQL query to insert the nwe student in the database
-//redirect to students.php	
+
