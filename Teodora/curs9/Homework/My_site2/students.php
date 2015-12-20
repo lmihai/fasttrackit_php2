@@ -66,7 +66,8 @@ while($row = mysqli_fetch_array($result) ) {
 	echo '</td>';
 
 	echo '<td>';
-	echo '<a href="delete.php?ID= '.$row["ID"].'"class="center">Delete<a>';
+	//link the delete links to delete_student.php?ID=[studentID]
+	echo '<a href="delete_student.php?ID= '.$row["ID"].'"class="center">Delete<a>';
 	echo '</td>';
 
 	echo '<td>';
