@@ -62,7 +62,8 @@ while($row = mysqli_fetch_array($result) ) {
 	
 
 	echo '<td>';
-	echo '<a href="edit.php?ID= '.$row["ID"] .'" class="center">Edit<a>';
+	//link the edit links to edit_student.php?ID=[studentID]
+	echo '<a href="edit_student.php?ID= '.$row["ID"] .'" class="center">Edit<a>';
 	echo '</td>';
 
 	echo '<td>';
