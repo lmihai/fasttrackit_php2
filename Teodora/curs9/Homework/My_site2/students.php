@@ -72,7 +72,7 @@ while($row = mysqli_fetch_array($result) ) {
 	echo '</td>';
 
 	echo '<td>';
-	echo '<a href="delete.php?ID= '.$row["ID"].'"class="center">Upload photo<a>';
+	echo '<a href="student_photo.php?ID= '.$row["ID"].'"class="center">Upload photo<a>';
 	echo '</td>';
 
 	echo '<td>';
