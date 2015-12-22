@@ -1,6 +1,6 @@
 <style>
 	div {
-		width: 650px;
+		width: 800px;
 		margin-left: auto;
 		margin-right: auto;	
 		margin-top: 70px;			
@@ -77,6 +77,10 @@ while($row = mysqli_fetch_array($result) ) {
 
 	echo '<td>';
 	echo '<a href="student_cv.php?ID= '.$row["ID"].'"class="center">Upload CV<a>';
+	echo '</td>';
+
+	echo '<td>';
+	echo '<a href="view_student.php?ID= '.$row["ID"].'"class="center">Profile<a>';
 	echo '</td>';
 }
 echo '</table>';

@@ -12,7 +12,7 @@ else {
 ?>
 <html>
 <body>
-<form action="cv_upload.php" method="post" enctype = "multipart/form-data"
+<form action="cv_upload_new.php" method="post" enctype = "multipart/form-data"
 type = "file" name = "fileUpload"/>
 Photo:	<input type="file" name="fileCV" /><br /><br />
 		<input type = "hidden" name = "studentId" value="<?php echo $studentId; ?>" />
