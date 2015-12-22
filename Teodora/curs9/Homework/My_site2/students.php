@@ -76,7 +76,7 @@ while($row = mysqli_fetch_array($result) ) {
 	echo '</td>';
 
 	echo '<td>';
-	echo '<a href="delete.php?ID= '.$row["ID"].'"class="center">Upload CV<a>';
+	echo '<a href="student_cv.php?ID= '.$row["ID"].'"class="center">Upload CV<a>';
 	echo '</td>';
 }
 echo '</table>';

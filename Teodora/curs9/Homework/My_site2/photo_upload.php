@@ -15,7 +15,7 @@ if($_FILES['filePhoto']['error'] === 0) {
 		//first move file from temp to permanent location (using move_uploaded_file function)
 		//parameter: filename and destination
 		$filename = $_FILES['filePhoto']['tmp_name'];
-		$destination = 'uploads/' . $_FILES['filePhoto']['name'];
+		$destination = 'uploads_photo/' . $_FILES['filePhoto']['name'];
 		//check student ID before moving the file to its permanent location
 		$studentId = $_POST['studentId']; 
 		//print $studentId;
