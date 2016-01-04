@@ -17,7 +17,7 @@ $sql = "SELECT * FROM courses";
 if ($result = mysqli_query($conn, $sql)) {
 	if (mysqli_num_rows($result)>0) {
 		echo "<table>";
-		echo "<th>id</th>";
+		echo "<th>Course<br> No.</th>";
 		echo "<th>CourseName</th>";
 		echo "<th>Trainer</th>";
 		echo "</tr>";
@@ -29,7 +29,7 @@ if ($result = mysqli_query($conn, $sql)) {
 			echo "</tr>";
 		}
 		echo "</table>";
-		
+
    	//Close result set
 		mysqli_free_result($result);
 	} else {
