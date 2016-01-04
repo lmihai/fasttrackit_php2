@@ -2,32 +2,68 @@ body{
 	background-color:  rgb(128, 178, 128);
 }
 h1 {
-    font-family: Signika,sans-serif;
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 46px;
-
+	font-family: Signika,sans-serif;
+	font-weight: 600;
+	font-size: 50px;
+	line-height: 46px;
+    color: rgb(128, 178, 128) ;
+    text-shadow: 2px 2px black;
 }
 .titlu{
 	padding: 30px;
 	background: #d9d9d9;
-	box-shadow: 10px 10px 5px #888888;
+	box-shadow: 10px 10px 5px #1a1a1a;
 	width: 75%;
+	border-radius: 3%;
 }
 table {
-    border-collapse: collapse;
-    width: 50%;
-    box-shadow: 10px 10px 5px #888888;
+	border-collapse: collapse;
+	width: 50%;
+	box-shadow: 10px 10px 5px #1a1a1a;
 }
 
 th, td {
-    text-align: left;
-    padding: 8px;
+	text-align: left;
+	padding: 8px;
 }
-tr:nth-child(odd){background-color: white;}
-tr:nth-child(even){background-color: #f2f2f2;}
+tr:nth-child(odd){
+	background-color: white;
+}
+tr:nth-child(even){
+	background-color: #f2f2f2;
+}
 
 th {
-    background-color: #800000;
-    color: white;
+	background-color: #800000;
+	color: white;
+}
+.button {
+	border: 2px solid black;
+	padding: 10px;
+	background-color: #f2f2f2;
+	color: black ;
+	font-weight: bold;
+	text-decoration: none;
+}
+.button:hover{
+	background-color: #800000
+}
+}
+.button:visited{
+	text-decoration:none;
+	color:#fff
+} 
+.form {
+	padding: 30px;
+	background: #d9d9d9;
+	box-shadow: 10px 10px 5px #1a1a1a;
+	width: 75%;
+	border: 3px solid #800000 ;
+}
+textarea, input {
+ outline: 3px solid #800000;
+ padding: 10px;
+}
+form{
+	font-size: 20px;
 }
