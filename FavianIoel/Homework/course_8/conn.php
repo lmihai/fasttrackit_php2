@@ -5,40 +5,26 @@ $password = "";
 $dbname = "school";
 
 // Create connection
-$conn = mysqli_connect($servername, $username, $password,$dbname);
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 
-// Check connection
 if (!$conn) {
 	die("Connection failed: " . mysqli_connect_error());
 }
 
-// Attempt select query execution
-$sql = "SELECT * FROM courses";
-if ($result = mysqli_query($conn, $sql)) {
-	if (mysqli_num_rows($result)>0) {
-		echo "<table>";
-		echo "<th>Course<br> No.</th>";
-		echo "<th>CourseName</th>";
-		echo "<th>Trainer</th>";
-		echo "</tr>";
-		while ($row = mysqli_fetch_array($result)) {
-			echo "<tr>";
-			echo "<td>" . $row['ID'] . "</td>";
-			echo "<td>" . $row['CourseName'] . "</td>";
-			echo "<td>" . $row['Trainer'] . "</td>";
-			echo "</tr>";
-		}
-		echo "</table>";
-
-   	//Close result set
-		mysqli_free_result($result);
-	} else {
-		echo "No records matching your query were found .";
+//This adds a new field.
+if(isset($_POST['addcourse'])) {
+	if (isset($_POST["CourseName"]) && isset($_POST["Trainer"])){
+		$course_Name = $_POST['CourseName'];
+		$trainer = $_POST['Trainer'];
+		$sql_add = "INSERT INTO Courses (CourseName, Trainer) VALUES ('$course_Name', '$trainer')";
+		$result = mysqli_query($conn, $sql_add);
+		header('location:index.php');
+		mysqli_close($conn);
 	}
-}else {
-	echo "ERROR: Could not able to execute $sql." . mysqli_close($conn);
+	else {
+		echo "<center>You need to have both course name and trainer name, please try again.";
+	}
 }
 
-//close conection
-mysqli_close($conn);
+
 ?>
