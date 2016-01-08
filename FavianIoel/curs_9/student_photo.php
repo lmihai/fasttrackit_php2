@@ -10,7 +10,7 @@ else {
 	exit;
 }
 
-//RAD THE PHOT ID FROM STUDENTS TABLE
+//ReAD THE PHOTo ID FROM STUDENTS TABLE
 
 $sql = 'SELECT Photo FROM Students WHERE  ID =' . $student_id;
 $result = mysqli_query($conn, $sql);
