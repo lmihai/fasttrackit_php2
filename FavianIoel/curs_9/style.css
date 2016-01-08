@@ -1,0 +1,27 @@
+body {
+	background-color: whitesmoke ; 
+    font-weight:  bold;
+    
+}
+  Titlu {
+      display: block;
+      background-color: #ddd;
+      padding: 50px;
+      font-size: 30px;
+      font-family:  Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  } 
+form{
+	padding: 20px;
+	border: 5px  solid white;
+}
+.button{
+    padding: 5px;
+    border: 1px solid lightskyblue;
+    background: white ;
+}
+
+/* not file bla bla bla  .*/
+#inputcontainer {
+    height:50px;
+    width:250px;
+}
