@@ -23,9 +23,9 @@ else {
 ?>
 <html>
 <body>
-<form method="post" enctype="multipart/form-data" action="student_photo.php" name="fileUpload">
+<form method="post" enctype="multipart/form-data" action="student_cv.php" name="fileUpload">
 	<input name="row_id" type="hidden" value="<?php echo $row_id ?>"><br/>
-	Photo:<input required type="file" name="filePhoto" /><br/>
+	CV:<input required type="file" name="fileCV" /><br/>
 	<input type="submit" name="btnSubmit" value="Upload" />
 </form>
 </body>
@@ -33,24 +33,23 @@ else {
 
 <?php
 if (isset($_POST["btnSubmit"])) {
-	if ($_FILES['filePhoto']['error'] == UPLOAD_ERR_PARTIAL) {
+	if ($_FILES['fileCV']['error'] == UPLOAD_ERR_PARTIAL) {
 		$error = 'Partial update! Full file was not uploaded';
 	}
-	if ($_FILES['filePhoto']['error'] === 0) {
+	if ($_FILES['fileCV']['error'] === 0) {
 		$student_id = $_POST['row_id'];
 		if ($student_id) {
 			echo "File uploaded." . "<br>";
-			if ($_FILES['filePhoto']['type'] == 'image/gif'
-				|| $_FILES['filePhoto']['type'] == 'image/png'
-				|| $_FILES['filePhoto']['type'] == 'image/jpeg'
+			if ($_FILES['fileCV']['type'] == 'application/msword'
+				|| $_FILES['fileCV']['type'] == 'application/pdf'
 			) {
-				$filename = $_FILES['filePhoto']['tmp_name'];
-				$destination = "uploads/" . $_FILES['filePhoto']['name'];
+				$filename = $_FILES['fileCV']['tmp_name'];
+				$destination = "uploads/" . $_FILES['fileCV']['name'];
 				if (move_uploaded_file($filename, $destination)) {
 					$sql = 'INSERT INTO Files (FileLocation) VALUES ("' . $destination . '")';
 					mysqli_query($db_conn, $sql);
 					if ($file_id = mysqli_insert_id($db_conn)) {
-						$sql = 'UPDATE Students SET Photo = ' . $file_id . ' WHERE ID = ' . $student_id;
+						$sql = 'UPDATE Students SET CV = ' . $file_id . ' WHERE ID = ' . $student_id;
 						mysqli_query($db_conn, $sql);
 						header('location:students.php');
 					}
@@ -59,12 +58,12 @@ if (isset($_POST["btnSubmit"])) {
 					echo "Destination not writable, cannot move file.";
 				}
 			}	else {
-					echo "Only gif, png or jpg files are allowed";
+					echo "Only doc or pdf files are allowed";
 					die;
-					}
-		}
+				}
+		} 
 	} else {
-		echo "upload error: " . $_FILES['filePhoto']['error'];
+		echo "upload error: " . $_FILES['fileCV']['error'];
 		exit;
 	}
 }
