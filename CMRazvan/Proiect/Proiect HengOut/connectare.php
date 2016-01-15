@@ -24,6 +24,7 @@ if (isset($_POST['user_username']) && isset($_POST['user_password']))
 		exit;
 	}
 	else
+		
 	{
 		echo "Mai incearca";
 		header("Location: connectare.php");
