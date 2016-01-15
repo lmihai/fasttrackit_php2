@@ -2,7 +2,7 @@
 session_start();
 //setcookie('php', 'phpacces', time() + 3600);
 include ('connect.php');
-//cone
+
 $conn_login = new mysqli($server, $user, $pass, $dbname);
 
 if (isset($_POST['username']) && isset($_POST['password']))
@@ -14,7 +14,7 @@ if (isset($_POST['username']) && isset($_POST['password']))
 	{
 		$row = $result -> fetch_assoc();
 		$_SESSION['id']=$row['user_id'];
-		header("Location: user.php");
+		header("Location: index.php");
 		exit;
 	}
 	else
