@@ -1,0 +1,110 @@
+/*-----------------------------------------------------------------------*/
+					/*aici este bara de la meniu*/
+/*asta face ca sa arete care buton este folosit*/
+.active {
+    background-color: #0000FF;
+}
+/*asta face ca atunci cand duci mouse pe el sa isi schimbe culoarea.*/
+li a:hover {
+    background-color: #0066FF;
+    border-top: solid 5px red;
+}
+/*aici este numele Logheazate-din h1*/
+h1{
+	text-align: center;
+}
+
+/*asta face sa bara de meniu sa fie orizontala*/
+li {
+    float: left;
+}
+/*asta ii da proprietati la bara de meniu cum sa arete*/
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-top: solid 5px red;
+}
+/*si asta ii da proprietati cum sa arete bara*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-top: solid 5px red;
+}
+/*-----------------------------------------------------------------------*/
+/*asta face sa stea loghinul pe mijloc sa aiba titlu de logare*/
+div.div_login{
+	width: 400px;
+	left: 33%;
+	top: 150px;
+	position: absolute;
+	background-color: #0000FF;
+}
+/*asta pozitioneaza forumul*/
+.forum{
+	width: 400px;
+	height: 300px;
+	left: 0px;
+	position: absolute;
+	background-color: #0066FF;
+	border-bottom-right-radius: 5em;
+	border-bottom-left-radius: 5em;
+}
+/*pozitioneaza scriusl si locul unde vine pusa parola*/
+p.usernames{
+	font-size: 25px;
+	position: absolute;
+	left: 150px;
+	top: -5px;
+}
+p.password1{
+	font-size: 25px;
+	position: absolute;
+	left: 150px;
+	top: 75px;
+}
+input.username{
+	border: solid;
+	border-radius: 5px;
+	width: 300px;
+	height: 30px;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	font-size: 20px;
+}
+input.password{
+	border: solid;
+	border-radius: 5px;
+	height: 30px;
+	font-size: 25px;
+	width: 300px;
+	position: absolute;
+	left: 50px;
+	top: 130px;
+}
+/*aiai face cum sa arete butonul*/
+button{
+	font-size: 20px;
+	position: absolute;
+	width: 100px;
+	top: 190px;
+	left: 247px;
+}
+/*-----------------------------------------------------*/
+/*incepe aranjarea tabelelor*/
+.db-course{	border-collapse: collapse; border-radius: 50%; width: 100%;}
+.db-course th{background-color: #0000FF; border: solid 1px;}
+.db-course td{border: 1px solid; text-align: center;}
+
+a:link    {font-weight:bold; text-decoration:none} 
+
+.statistic-table{border: solid 1px black;}
+.statistic-table td{border: solid 1px red;}
+
+
