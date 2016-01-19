@@ -56,7 +56,7 @@ else{
 						$sql_viewproposal = "SELECT * FROM proposal
 							WHERE ID = '$ID' ";
 						$Resultsproposal = mysqli_query($con, $sql_viewproposal);
-						echo '<table><tr bgcolor="#ccc"><td>Date</td><td>Subject</td>
+						echo '<table style="width:90%"><tr bgcolor="#ccc"><td>Date</td><td>Subject</td>
 								<td>Location</td><td>Address</td><td>Details</td>';
 							while($row1 = mysqli_fetch_array($Resultsproposal)){
 								echo '<tr>';
@@ -97,38 +97,30 @@ else{
 						</form>
 					<?php }
 					else{
-						if(isset($_POST['choice'])) {
 						$choiceID = $_POST['choice']; //id choice
 						//print $choiceID;	ok
 						$ID = $_GET['ID']; //id proposal
 						//print $ID; ok
-						//print $user; //id user ok 							
-						$sql_check = "SELECT proposalID FROM answers WHERE userID = '$user' AND proposalID = '$ID'";
-						$Results_check = mysqli_query($con, $sql_check);
-						$row = mysqli_fetch_assoc($Results_check);
-						if ($row == false) {
-							$sql_vote = "INSERT INTO answers (proposalID, userID, choiceID)
+						//print $user; //id user ok
+													
+							
+						$sql_vote = "INSERT INTO answers (proposalID, userID, choiceID)
 											VALUES ('{$ID}', '{$user}','{$choiceID}')";	
-	
-							$resultvote = mysqli_query($con, $sql_vote) or die 
-							(error_reporting(E_ALL ^ E_DEPRECATED));				
+
+						
+						
+						$resultvote = mysqli_query($con, $sql_vote) or die 
+						(error_reporting(E_ALL ^ E_DEPRECATED));				
 								
-							if($resultvote){
-							print "<h3>Your vote was successfully saved! </h3>";
+						if($resultvote){
+						print "<h3>Your vote was successfully saved! </h3>";
 										
-							echo '<h2>Go to<a href ="proposals_list.php">List proposals</a></h2>';
-							}
-							else{
-							error_reporting();								 
-							}
+						echo '<h2>Go to<a href ="proposals_list.php">List proposals</a></h2>';
 						}
-						else {
-							echo "Sorry you can vote only once a proposal!";
-						}	
-					}
-					else{
-							echo "<h2>Please check one option</h2>";								 
-							}
+						else{
+						error_reporting();								 
+						}		
+					
 					}
 					?>
 			</div>
