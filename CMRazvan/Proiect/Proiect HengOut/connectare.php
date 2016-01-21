@@ -52,7 +52,7 @@ if (isset($_POST['user_username']) && isset($_POST['user_password']))
 			</div>
 			<div class='div_content'>
 				<div class='div_form_add_user'>
-					<?php if(isset($_GET[$raspuns]) == 1) {echo "Mai Incearca";}?>
+					
 					<form align='center' method='post' action=''>
 						<br>
 						<input type='text' name='user_username' value='Username'><br><br>
