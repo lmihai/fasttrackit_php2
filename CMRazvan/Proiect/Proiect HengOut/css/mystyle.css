@@ -15,6 +15,9 @@ div.div_top{
 	height: 150px;
 
 }
+div.form_user_error{
+	text-align: center;
+}
 div.div_logo{
 	/*border: solid 2px blue;*/
 	position: absolute;
@@ -71,14 +74,16 @@ td.tb_ob_3{
 	height: 150px;
 }
 .active {
-    background-color: #0000FF;
+    background-color: red;
 }
+
 /*asta face ca atunci cand duci mouse pe el sa isi schimbe culoarea.*/
 li a:hover {
     background-color: #0066FF;
     /*aici face sa apara border yellow frumos deasupra butonului care ducem mousele*/
-    border-top: solid 5px yellow;
+    /*border-top: solid 5px yellow;*/
 }
+
 /*aici este numele Logheazate-din h1*/
 h1{
 	text-align: center;
@@ -106,5 +111,26 @@ ul {
     background-color: #333;
     /*border-top: solid 5px pink;*/
 }
+/* Style for form add_prop*/
 
-/*INSERT INTO `hangout`.`propuneri` (`prop_id`, `prop_name`, `prop_poza`, `prop_descriere`, `prop_data_create`, `prop_data_execute`, `prop_create_user`, `prop_rank`, `prop_option`) VALUES ('', 'Iesire la Mall', 'uploads/propuneri/test1.jpg', 'Cel ami bun loc', '2016-01-13', '2016-01-30', '1', '7', 'Descrierea locului');*/
+
+
+/**/
+div.left_side{
+	float: left;
+	margin: 20px 20px;
+}
+div.right_side{
+	float: right;
+	margin: 20px 20px;
+}
+
+div.img_prop_show{
+	
+	top: 10px;
+	right: 10px;
+	float: right;
+}
+div.desciere_prop{
+	float: left;
+}

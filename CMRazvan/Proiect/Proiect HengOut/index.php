@@ -1,5 +1,8 @@
-<?php
+<?php session_start();
 
+if (isset($_SESSION['id'])){
+echo "Bine ai venit<br> <i>" .  $_SESSION['id']. "</i>";
+}
 ?>
 <html>
 		<head>
@@ -10,20 +13,13 @@
 			<div class='div_top'>
 				<div class='div_logo'><img src="img/_logo_1.jpg" alt='130px/130px' width='130' height='130'></div>
 				<div class='div_menu'>
-					<ul>
-						<li><a class='active' href='index.php'>Acasa</a></li>
-						<li><a href='propuneri.php'>Propuneri</a></li>
-							<ul style='float:right;list-style-type:none;'>
-								<li><a href='despre.php'>Despre</a></li>
-								<li><a href='connectare.php'>Conectare</a></li>
-							</ul> 
-					</ul>
+					<?php include'meniu.php';?>
 				</div>
 			</div>
 			<div class='div_content'>
 				<table>
 					<tr><td class='tb_ob_1'><?php 
-				include 'connection.php';
+				include 'conn.php';
 				$conn = new mysqli($servername, $username, $password, $database);
 				$sql = "SELECT * FROM `propuneri` WHERE prop_rank = 7";
 				$result = $conn->query($sql);
@@ -48,9 +44,10 @@
 
 				$conn->close();
 
-				?></td></tr>
+				?>
+			</td></tr>
 					<tr><td class='tb_ob_2'><?php 
-				include 'connection.php';
+				include 'conn.php';
 				$conn = new mysqli($servername, $username, $password, $database);
 				if ($conn->connect_error) {
 				    die("Connection failed: " . $conn->connect_error);
@@ -67,7 +64,7 @@
 				$conn->close();
 				?></td></tr>
 					<tr><td class='tb_ob_3'><?php 
-				include 'connection.php';
+				include 'conn.php';
 				$conn = new mysqli($servername, $username, $password, $database);
 				if ($conn->connect_error) {
 				    die("Connection failed: " . $conn->connect_error);
@@ -85,6 +82,9 @@
 				$conn->close();
 				?></td></tr>
 				</table>
+
+
+
 			</div>
 		</div>
 	</body>
