@@ -65,8 +65,7 @@ echo "
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['CURSURI', 'STUDENTI' ],
-          ['','1000'],
-          ";
+                    ";
 $resulta = $conn->query($sqla);
 if ($resulta->num_rows > 0) {
     // output data of each row

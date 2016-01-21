@@ -4,5 +4,4 @@ $user = "root";
 $pass = "";
 $dbname = "school";
 
-
 ?>

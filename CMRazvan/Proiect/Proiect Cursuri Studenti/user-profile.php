@@ -8,7 +8,7 @@
 						<tr>
 								<td style="border: solid blue 3px;border-collapse: collapse;width:300px;height: 30px;"><?php
 									include ('connect.php');
-									$conn = new mysqli($servername, $username, $password, $dbname);
+									$conn = new mysqli($server, $user, $pass, $dbname);
 									if ($conn->connect_error) {
 									    die("Connection failed: " . $conn->connect_error);
 									} 
@@ -77,7 +77,7 @@
 							<tr><td>Curs: </td>
 								<td><?php
 									include ('connect.php');
-									$conn = new mysqli($servername, $username, $password, $dbname);
+									$conn = new mysqli($server, $user, $pass, $dbname);
 									if ($conn->connect_error) {
 									    die("Connection failed: " . $conn->connect_error);
 									} 
@@ -111,7 +111,7 @@
 							<tr><td>Cv: </td>
 								<td><?php
 									include ('connect.php');
-									$conn = new mysqli($servername, $username, $password, $dbname);
+									$conn = new mysqli($server, $user, $pass, $dbname);
 									if ($conn->connect_error) {
 									    die("Connection failed: " . $conn->connect_error);
 									} 

@@ -6,15 +6,15 @@ $username = "root";
 $password = "";
 $database = "hangout";
 if (isset($_POST['user_connect'])) {
-	echo "MAI INCEARCA";
-}
+	
+
 $conn_login = new mysqli($servername, $username, $password, $database);
 
 if (isset($_POST['user_username']) && isset($_POST['user_password']))
 {
 	$sql = "SELECT * FROM login WHERE user_username='" . $_POST['user_username'] . "' AND user_password= md5('" . $_POST['user_password'] . "')";
 	$result = $conn_login->query($sql);
-	
+	$raspuns = 0;
 	if ($result->num_rows > 0) 
 	{
 		$row = $result -> fetch_assoc();
@@ -26,11 +26,11 @@ if (isset($_POST['user_username']) && isset($_POST['user_password']))
 	else
 		
 	{
-		echo "Mai incearca";
-		header("Location: connectare.php");
-		exit;
+		$raspuns = 1;
+//		header("Location: connectare.php");
+//		exit;
 	}	
-}
+}}
 ?><html>
 		<head>
 			<link rel="stylesheet" type="text/css" href="css/mystyle.css">
@@ -52,6 +52,7 @@ if (isset($_POST['user_username']) && isset($_POST['user_password']))
 			</div>
 			<div class='div_content'>
 				<div class='div_form_add_user'>
+					<?php if(isset($_GET[$raspuns]) == 1) {echo "Mai Incearca";}?>
 					<form align='center' method='post' action=''>
 						<br>
 						<input type='text' name='user_username' value='Username'><br><br>
