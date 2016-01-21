@@ -78,7 +78,7 @@ else{
 
 								echo'<td>';										
 								$ID = $row1['ID'];
-								echo '<a href = "http://localhost/fasttrackit_php2\Teodora\Hangout project with registration system/Proposal.php?ID='.$ID.'">View</a>';	//	// _GET['ID'] pentru vote proposal							
+								echo '<a href = "http://localhost/fasttrackit_php2\Teodora\Hangout project with registration system/Proposal (3).php?ID='.$ID.'">View</a>';	//	// _GET['ID'] pentru vote proposal							
 								echo'</td>';
 							
 
