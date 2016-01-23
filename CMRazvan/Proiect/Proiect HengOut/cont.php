@@ -21,8 +21,6 @@ echo "Bine ai venit<br> <i>" .  $_SESSION['id'] . "</i>";
 			<div class='div_content'>
 				<a href="add_user.php"> Adauga User</a><br>
 				<a href="add_prop.php"> Adauga Propunere</a>
-			
-
 			</div>
 		</div>
 	</body>

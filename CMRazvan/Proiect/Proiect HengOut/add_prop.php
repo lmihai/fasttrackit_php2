@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (isset($_SESSION['id'])){
+echo "Bine ai venit<br> <i>" .  $_SESSION['id'] . "</i>";
+}
+?>
+
 <html>
 		<head>
 			<link rel="stylesheet" type="text/css" href="css/mystyle.css">
@@ -11,58 +18,39 @@
 				</div>
 			</div>
 			<div class='div_content'>
+				<div class='div_menu_prop'>
+					<ul>
+						<li><a href='add_user.php'>Add User</a></li>
+						<li><a class='active' href='add_prop.php'>Add Prop</a></li>
+						<li><a href='del-prop.php'>Del Prop</a></li>
+						<li><a href=''>Status Prop</a></li>
+					</ul>
 							<div class='left_side'>
 
 <?php
-session_start();
-
-
-
-
-//error_reporting(0);
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "hangout";
-// Create connection
+include 'conn.php';
 $conn = new mysqli($servername, $username, $password, $database);
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-
 if (isset($_POST['prop_add'])) {
-	
-if ($_FILES['prop_poza']['error'] === 0) //trew sa fac partea de conditie pe partea de doc  ) {
+	if ($_FILES['prop_poza']['error'] === 0) //trew sa fac partea de conditie pe partea de doc  ) {
 	if ($_FILES['prop_poza']['type']== 'image/gif'
 		|| $_FILES['prop_poza']['type']== 'image/png'
 		|| $_FILES['prop_poza']['type']== 'image/jpeg'){
 					$filename_photo_prop = $_FILES['prop_poza']['tmp_name'];
 					$destination_photo_prop = "uploads/propuneri/" . $_FILES['prop_poza']['name'];
 					}
-
 if (move_uploaded_file($filename_photo_prop, $destination_photo_prop)) {
-
 $sql = "INSERT INTO propuneri (	`prop_id`, `prop_name`, `prop_poza`, `prop_descriere`, `prop_data_create`, `prop_data_execute`, `prop_create_user`, `prop_rank`, `prop_option`) 
 VALUES (NULL, '" . $_POST['prop_name'] ."', '" . $destination_photo_prop ."','" . $_POST['prop_descriere'] ."','" . $_POST['prop_data_create'] ."','" . $_POST['prop_data_execute'] ."','" . $_SESSION['id'] ."','" . $_POST['prop_rank'] ."','" . $_POST['prop_option'] ."')";
-
-//"INSERT INTO propuneri (`prop_id`, `prop_name`, `prop_poza`, `prop_descriere`, `prop_data_create`, `prop_data_execute`, `prop_create_user`, `prop_rank`, `prop_option`) VALUES (NULL, 'Acasa', 'upload/porpupload/test2.jpg', 'propunere mare', '2016-01-21', '2016-01-28', '', '2', 'Sa ne jucam')";
-
-
 if ($conn->query($sql) === TRUE) {
 echo "New record created successfully Proposel<br>";
-
 } else {
-
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
-
 }}
 $conn->close();
-				
-if (isset($_SESSION['id'])){
-echo "Bine ai venit<br> <i>" .  $_SESSION['id']. "</i>";
-}
 ?>
 
 								<form class='add_prop' method="POST" enctype="multipart/form-data" action="add_prop.php">

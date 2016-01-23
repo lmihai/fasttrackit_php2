@@ -1,7 +1,6 @@
 <?php session_start();
 if (isset($_SESSION['id'])){
-echo "Bine ai venit<br> <i>" .  $_SESSION['id']. "</i>";
-}
+echo "Bine ai venit<br> <i>" .  $_SESSION['id']. "</i>";}
 ?>
 <html>
 		<head>
@@ -16,43 +15,31 @@ echo "Bine ai venit<br> <i>" .  $_SESSION['id']. "</i>";
 				</div>
 			</div>
 			<div class='div_content'>
-<?php
-
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "hangout";
-if (isset($_POST['user_connect'])) {
-	
-
-$conn_login = new mysqli($servername, $username, $password, $database);
-
-if (isset($_POST['user_username']) && isset($_POST['user_password']))
-{
-	$sql = "SELECT * FROM login WHERE user_username='" . $_POST['user_username'] . "' AND user_password= md5('" . $_POST['user_password'] . "')";
-	$result = $conn_login->query($sql);
-
-	if ($result->num_rows > 0) 
-	{
-		$row = $result -> fetch_assoc();
-		$_SESSION['id']=$row['user_username'];
-		echo  $row['user_username'];
-		header("Location: index.php");
-		exit;
-	}
-	else
-		
-	{
-		echo "<br><div class='form_user_error'>Ai gresit User sau Parola mai incearca</div>";
-//		header("Location: connectare.php");
-//		exit;
-	}	
-}
-}
-?>
-				<div class='div_form_add_user'>
 				
+<?php
+include 'conn.php';
+if (isset($_POST['user_connect'])) 
+{
+	$conn_login = new mysqli($servername, $username, $password, $database);
+	if (isset($_POST['user_username']) && isset($_POST['user_password']))
+	{
+		$sql = "SELECT * FROM login WHERE user_username='" . $_POST['user_username'] . "' AND user_password= md5('" . $_POST['user_password'] . "')";
+		$result = $conn_login->query($sql);
+			if ($result->num_rows > 0) 
+			{
+				$row = $result -> fetch_assoc();
+				$_SESSION['id']=$row['user_username'];
+				header("Location: index.php");
+				exit;
+			}
+			else
+			{
+				echo "<br><div class='form_user_error'>Ai gresit User sau Parola mai incearca</div>";
+			}	
+	}
+}
+?>				
+				<div class='div_form_add_user'>
 					<form align='center' method='post' action=''>
 						<br>
 						<input type='text' name='user_username' value='Username'><br><br>

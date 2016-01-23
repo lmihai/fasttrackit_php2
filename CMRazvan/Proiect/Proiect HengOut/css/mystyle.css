@@ -1,10 +1,15 @@
 div._body{
-	border: solid 2px blue;
+	/*border: solid 2px blue;*/
 	position: absolute;
 	top: 10px;
 	left: 16%;
 	width: 800px;
-	height: 700px;
+	height: 1000px;
+	border-radius: 5px;
+	background: lightblue;
+}
+body{
+	height: 100%;
 }
 div.div_top{
 	/*border: solid 2px blue;*/
@@ -17,6 +22,12 @@ div.div_top{
 }
 div.form_user_error{
 	text-align: center;
+}
+.product_view {
+	position: absolute;
+	/*border: 1px dotted red;*/
+	height: 130px;
+	width: 100%;
 }
 div.div_logo{
 	/*border: solid 2px blue;*/
@@ -37,8 +48,12 @@ div.div_menu{
 div.div_menu_prop{
 
 }
+table {
+	border-radius: 5px;
+	background: green;
+}
 div.div_content{
-	border: solid 2px blue;
+	/*border: solid 2px blue;*/
 	position: absolute;
 	top: 180px;
 	left: 8px;
@@ -48,7 +63,7 @@ div.div_content{
 div.div_form_add_user{
 
 }
-td.tb_ob_1{
+/*td.tb_ob_1{
 	border: solid 2px red;
 	position: absolute;
 	top: 10px;
@@ -72,7 +87,7 @@ td.tb_ob_3{
 	left: 10px;
 	width: 755px;
 	height: 150px;
-}
+}*/
 .active {
     background-color: red;
 }
@@ -112,10 +127,6 @@ ul {
     /*border-top: solid 5px pink;*/
 }
 /* Style for form add_prop*/
-
-
-
-/**/
 div.left_side{
 	float: left;
 	margin: 20px 20px;
@@ -133,4 +144,79 @@ div.img_prop_show{
 }
 div.desciere_prop{
 	float: left;
+}
+
+img.poza_user_p {
+	width: 130px;
+	height: 130px;
+	float: right;
+}
+img.poza_prop_p{
+	width: 130px;
+	height: 130px;
+	float: left;
+}
+table {
+	/*border: 1px solid red;*/
+	width: 100%;
+	margin-top: 5px;
+}
+td {
+	margin-top: 5px;
+
+	/*border: 1px solid blue;*/
+}
+td.desciere{
+	color: black;
+	float: left;
+}
+td.td_poza{
+	width: 130px;
+	height: 130px;
+}
+td.butoane {
+	width: 200px;
+	height: 130px; 
+	text-align: center;	
+}
+input:visited {
+ background: red;
+
+}
+table.table_optiuni{
+	position: absolute;
+	top: 5px;
+	border-radius: 5px;
+	background: red;
+	text-align: center;
+}
+.div_form_add_user{
+	border-radius: 5px;
+	background: blue;
+	width: 300px;
+	left: 250px;
+	top: 50px;
+	position: absolute;
+}
+.form_user_error {
+	background: red;
+}
+a.buton_link {
+	text-decoration: none;
+	background: lightblue;
+	padding: 5px 18px;
+	display: block;
+	border-radius: 5px;
+}
+a.buton_link:active,
+a.buton_link:visited,
+a.buton_link:link {
+	color: red;
+}
+a.buton_link:hover {
+	color: black;
+}
+td.ceva_ceva_ceva {
+	margin-top: 10px;
+	top: 10px;
 }
