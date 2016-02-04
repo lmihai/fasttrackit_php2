@@ -3,8 +3,9 @@
 
 include("models/model_genres.php");
 include("models/model_movies.php");
-
-
+?>
+<section class="genre"></section>
+<?php  
 
 for ($i=1; $i < count($movies); $i++) {
 	$movie_title = $movies[$i]["title"];
